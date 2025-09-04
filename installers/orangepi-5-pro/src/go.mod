@@ -1,4 +1,4 @@
-module orangepi-5
+module orangepi-5-pro
 
 go 1.24.0
 
