@@ -22,7 +22,7 @@ steps:
     build:
       - |
         cd /pkg/src
-        CGO_ENABLED=0 go build -o ./orangepi-5 .
+        CGO_ENABLED=0 go build -o ./orangepi-5-pro .
     install:
       - |
         mkdir -p /rootfs/installers/
