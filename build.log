@@ -1,0 +1,2422 @@
+make[1]: Entering directory '/home/wwaddell/sbc-rockchip'
+make[2]: Entering directory '/home/wwaddell/sbc-rockchip'
+#0 building with "local1" instance using docker-container driver
+
+#1 [internal] load build definition from Pkgfile
+#1 transferring dockerfile: 2.57kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://ghcr.io/siderolabs/bldr:v0.4.1
+#2 DONE 0.7s
+
+#3 docker-image://ghcr.io/siderolabs/bldr:v0.4.1@sha256:ae2f25b740abd2ed9ddd69e5ed5a8105a334702a63527c6208bbc2180446c6b4
+#3 resolve ghcr.io/siderolabs/bldr:v0.4.1@sha256:ae2f25b740abd2ed9ddd69e5ed5a8105a334702a63527c6208bbc2180446c6b4 done
+#3 CACHED
+
+#4 load Pkgfile, pkg.yamls and vars.yamls
+#4 transferring dockerfile: 22.80kB 0.0s done
+#4 DONE 0.0s
+
+#5 linux/amd64 mkdir /pkg
+#5 CACHED
+
+#6 linux/arm64 u-boot-helios64:download https://ftp.denx.de/pub/u-boot/u-boot-2022.07.tar.bz2 -> u-boot.tar.bz2
+#6 DONE 0.0s
+
+#7 linux/arm64 u-boot-rock4se:download https://ftp.denx.de/pub/u-boot/u-boot-2024.07.tar.bz2 -> u-boot.tar.bz2
+#7 DONE 0.0s
+
+#8 linux/arm64 u-boot-turingrk1:download https://ftp.denx.de/pub/u-boot/u-boot-2025.01.tar.bz2 -> u-boot.tar.bz2
+#8 DONE 0.0s
+
+#9 linux/arm64 dtb-turingrk1:download https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.18.tar.xz -> linux.tar.xz
+#9 DONE 0.0s
+
+#10 linux/amd64 rkbin-rk3588:download https://github.com/rockchip-linux/rkbin/archive/7c35e21a8529b3758d1f051d1a5dc62aae934b2b.tar.gz -> rkbin.tar.gz
+#10 DONE 0.0s
+
+#11 linux/arm64 arm-trusted-firmware-rk3328:download https://github.com/ARM-software/arm-trusted-firmware/archive/lts-v2.10.4.tar.gz -> arm-trusted-firmware.tar.gz
+#11 DONE 0.0s
+
+#12 linux/arm64 arm-trusted-firmware-rk3588:download https://github.com/ARM-software/arm-trusted-firmware/archive/v2.12.0.tar.gz -> arm-trusted-firmware.tar.gz
+#12 DONE 0.0s
+
+#13 linux/amd64 context
+#13 DONE 0.0s
+
+#14 linux/amd64 context
+#14 DONE 0.0s
+
+#15 [auth] *:: wwaddell/kernel:pull token for gitea.wwaddell.com
+#15 DONE 0.0s
+
+#16 linux/amd64 context
+#16 DONE 0.0s
+
+#17 linux/amd64 context
+#17 DONE 0.0s
+
+#18 linux/amd64 context
+#18 DONE 0.0s
+
+#19 linux/amd64 context
+#19 DONE 0.0s
+
+#20 linux/amd64 context
+#20 DONE 0.0s
+
+#21 linux/arm64 context
+#21 DONE 0.0s
+
+#22 linux/arm64 context
+#22 DONE 0.0s
+
+#23 linux/arm64 context
+#23 DONE 0.0s
+
+#24 linux/arm64 context
+#24 DONE 0.0s
+
+#25 linux/arm64 context
+#25 DONE 0.0s
+
+#26 linux/arm64 context
+#26 DONE 0.0s
+
+#27 linux/arm64 context
+#27 DONE 0.0s
+
+#28 linux/arm64 context
+#28 DONE 0.0s
+
+#29 linux/arm64 context
+#29 DONE 0.0s
+
+#30 linux/arm64 context
+#30 DONE 0.0s
+
+#31 linux/arm64 context
+#31 DONE 0.0s
+
+#32 linux/arm64 context
+#32 DONE 0.0s
+
+#33 linux/arm64 context
+#33 DONE 0.0s
+
+#34 linux/arm64 context
+#34 DONE 0.0s
+
+#35 linux/arm64 context
+#35 DONE 0.0s
+
+#36 linux/arm64 context
+#36 DONE 0.0s
+
+#37 linux/arm64 context
+#37 DONE 0.0s
+
+#38 linux/arm64 context
+#38 DONE 0.0s
+
+#39 linux/arm64 context
+#39 DONE 0.0s
+
+#40 linux/amd64 context
+#40 DONE 0.0s
+
+#41 linux/amd64 context
+#41 DONE 0.0s
+
+#42 linux/amd64 context
+#42 DONE 0.0s
+
+#43 linux/amd64 context
+#43 DONE 0.0s
+
+#44 linux/amd64 context
+#44 DONE 0.0s
+
+#45 linux/amd64 context
+#45 DONE 0.0s
+
+#46 linux/arm64 context
+#46 transferring context: 13.03kB 0.0s done
+#46 DONE 0.0s
+
+#47 linux/arm64 profiles:finalize /pkg/rock64 -> /rootfs/profiles
+#47 CACHED
+
+#48 linux/arm64 profiles:finalize /pkg/nanopi-r5s -> /rootfs/profiles
+#48 CACHED
+
+#49 linux/arm64 profiles:finalize /pkg/orangepi-5 -> /rootfs/profiles
+#49 CACHED
+
+#50 linux/arm64 profiles:finalize /pkg/orangepi-5-plus -> /rootfs/profiles
+#50 CACHED
+
+#51 linux/arm64 profiles:finalize /pkg/radxa-zero-3e -> /rootfs/profiles
+#51 CACHED
+
+#52 linux/arm64 profiles:finalize /pkg/rockpi4 -> /rootfs/profiles
+#52 CACHED
+
+#53 linux/arm64 profiles:finalize /pkg/rockpi4c -> /rootfs/profiles
+#53 CACHED
+
+#54 linux/arm64 profiles:finalize /pkg/turingrk1 -> /rootfs/profiles
+#54 CACHED
+
+#55 linux/arm64 profiles:finalize /pkg/rock4se -> /rootfs/profiles
+#55 CACHED
+
+#56 linux/arm64 profiles:finalize /pkg/orangepi-r1-plus-lts -> /rootfs/profiles
+#56 CACHED
+
+#57 linux/arm64 profiles:finalize /pkg/helios64 -> /rootfs/profiles
+#57 CACHED
+
+#58 linux/arm64 profiles:finalize /pkg/rock4cplus -> /rootfs/profiles
+#58 CACHED
+
+#59 linux/arm64 profiles:finalize /pkg/rockpro64 -> /rootfs/profiles
+#59 CACHED
+
+#60 linux/arm64 profiles:finalize /pkg/nanopi-r4s -> /rootfs/profiles
+#60 CACHED
+
+#61 linux/arm64 profiles:finalize /pkg/odroid-m1 -> /rootfs/profiles
+#61 CACHED
+
+#62 linux/arm64 profiles:finalize /pkg/rock5b -> /rootfs/profiles
+#62 CACHED
+
+#63 linux/arm64 profiles:finalize /pkg/rock5a -> /rootfs/profiles
+#63 CACHED
+
+#64 linux/arm64 profiles:context /profiles -> /pkg
+#64 CACHED
+
+#65 linux/arm64 profiles:finalize /pkg/orangepi-5-pro -> /rootfs/profiles
+#65 CACHED
+
+#66 linux/arm64 profiles:finalize
+#66 CACHED
+
+#67 docker-image://gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1
+#67 resolve gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 0.1s done
+#67 DONE 0.1s
+
+#68 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3588-rock-5b.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3588-rock-5b.dtb
+#68 CACHED
+
+#69 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3399-kobol-helios64.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3399-kobol-helios64.dtb
+#69 CACHED
+
+#70 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3568-odroid-m1.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3568-odroid-m1.dtb
+#70 CACHED
+
+#71 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3588s-orangepi-5.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3588s-orangepi-5.dtb
+#71 CACHED
+
+#72 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3399-rockpro64-v2.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3399-rockpro64-v2.dtb
+#72 CACHED
+
+#73 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3568-nanopi-r5s.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3568-nanopi-r5s.dtb
+#73 CACHED
+
+#74 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3566-radxa-zero-3e.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3566-radxa-zero-3e.dtb
+#74 CACHED
+
+#75 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3399-rock-4c-plus.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3399-rock-4c-plus.dtb
+#75 CACHED
+
+#76 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3399-nanopi-r4s.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3399-nanopi-r4s.dtb
+#76 CACHED
+
+#77 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3399-rock-4se.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3399-rock-4se.dtb
+#77 CACHED
+
+#78 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3328-rock64.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3328-rock64.dtb
+#78 CACHED
+
+#79 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3588s-rock-5a.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3588s-rock-5a.dtb
+#79 CACHED
+
+#80 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3399-rock-pi-4c.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3399-rock-pi-4c.dtb
+#80 CACHED
+
+#81 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3399-rock-pi-4b.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3399-rock-pi-4b.dtb
+#81 CACHED
+
+#82 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3588-orangepi-5-plus.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3588-orangepi-5-plus.dtb
+#82 CACHED
+
+#83 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3588s-orangepi-5-pro.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3588s-orangepi-5-pro.dtb
+#83 CACHED
+
+#84 linux/arm64 sbc-rockchip:copy --from gitea.wwaddell.com/wwaddell/kernel:opi5pro-v1 /dtb/rockchip/rk3328-orangepi-r1-plus-lts.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3328-orangepi-r1-plus-lts.dtb
+#84 CACHED
+
+#85 docker-image://ghcr.io/siderolabs/tools:v1.10.0
+#85 resolve ghcr.io/siderolabs/tools:v1.10.0 0.2s done
+#85 DONE 0.2s
+
+#86 linux/amd64 rock5b:mkdir /tmp/build
+#86 CACHED
+
+#87 linux/amd64 base:copy
+#87 CACHED
+
+#88 linux/amd64 base:context /internal/base -> /pkg
+#88 CACHED
+
+#89 linux/amd64 rock5b:mkdir /tmp/build
+#89 CACHED
+
+#90 linux/amd64 base:copy --from ghcr.io/siderolabs/tools:v1.10.0 / -> /rootfs
+#90 CACHED
+
+#91 linux/amd64 rock5b:context /installers/rock5b -> /pkg
+#91 CACHED
+
+#92 linux/amd64 turingrk1:copy
+#92 CACHED
+
+#93 linux/amd64 rock5b:install-1
+#93 CACHED
+
+#94 linux/amd64 rock5b:build-1
+#94 CACHED
+
+#95 linux/amd64 rock5b:prepare-0
+#95 CACHED
+
+#96 linux/amd64 base:finalize /rootfs -> /
+#96 CACHED
+
+#97 linux/amd64 orangepi-r1-plus-lts:mkdir /tmp/build
+#97 CACHED
+
+#98 linux/amd64 orangepi-r1-plus-lts:build-1
+#98 CACHED
+
+#99 linux/amd64 orangepi-r1-plus-lts:install-1
+#99 CACHED
+
+#100 linux/amd64 orangepi-r1-plus-lts:mkdir /tmp/build
+#100 CACHED
+
+#101 linux/amd64 orangepi-r1-plus-lts:context /installers/orangepi-r1-plus-lts -> /pkg
+#101 CACHED
+
+#102 linux/amd64 orangepi-r1-plus-lts:prepare-0
+#102 CACHED
+
+#103 linux/amd64 rock5b:finalize /rootfs -> /rootfs
+#103 CACHED
+
+#104 linux/amd64 rock4cplus:mkdir /tmp/build
+#104 CACHED
+
+#105 linux/amd64 rock4cplus:mkdir /tmp/build
+#105 CACHED
+
+#106 linux/amd64 rock4cplus:build-1
+#106 CACHED
+
+#107 linux/amd64 rock4cplus:prepare-0
+#107 CACHED
+
+#108 linux/amd64 rock4cplus:context /installers/rock4cplus -> /pkg
+#108 CACHED
+
+#109 linux/amd64 rock4cplus:install-1
+#109 CACHED
+
+#110 linux/amd64 orangepi-r1-plus-lts:finalize /rootfs -> /rootfs
+#110 CACHED
+
+#111 linux/amd64 rock4cplus:finalize /rootfs -> /rootfs
+#111 CACHED
+
+#112 linux/amd64 rock4se:context /installers/rock4se -> /pkg
+#112 CACHED
+
+#113 linux/amd64 rock4se:mkdir /tmp/build
+#113 CACHED
+
+#114 linux/amd64 rock4se:mkdir /tmp/build
+#114 CACHED
+
+#115 linux/amd64 rock4se:install-1
+#115 CACHED
+
+#116 linux/amd64 rock4se:prepare-0
+#116 CACHED
+
+#117 linux/amd64 rock4se:build-1
+#117 CACHED
+
+#118 linux/amd64 rock4se:finalize /rootfs -> /rootfs
+#118 CACHED
+
+#119 linux/amd64 rockpi4:install-1
+#119 CACHED
+
+#120 linux/amd64 rockpi4:prepare-0
+#120 CACHED
+
+#121 linux/amd64 rockpi4:mkdir /tmp/build
+#121 CACHED
+
+#122 linux/amd64 rockpi4:mkdir /tmp/build
+#122 CACHED
+
+#123 linux/amd64 rockpi4:context /installers/rockpi4 -> /pkg
+#123 CACHED
+
+#124 linux/amd64 rockpi4:build-1
+#124 CACHED
+
+#125 linux/amd64 rock5a:mkdir /tmp/build
+#125 CACHED
+
+#126 linux/amd64 rock5a:context /installers/rock5a -> /pkg
+#126 CACHED
+
+#127 linux/amd64 rock5a:mkdir /tmp/build
+#127 CACHED
+
+#128 linux/amd64 rock5a:build-1
+#128 CACHED
+
+#129 linux/amd64 rock5a:install-1
+#129 CACHED
+
+#130 linux/amd64 rock5a:prepare-0
+#130 CACHED
+
+#131 linux/amd64 rock5a:finalize /rootfs -> /rootfs
+#131 CACHED
+
+#132 linux/amd64 turingrk1:prepare-0
+#132 CACHED
+
+#133 linux/amd64 turingrk1:mkdir /tmp/build
+#133 CACHED
+
+#134 linux/amd64 turingrk1:context /installers/turingrk1 -> /pkg
+#134 CACHED
+
+#135 linux/amd64 turingrk1:install-1
+#135 CACHED
+
+#136 linux/amd64 turingrk1:build-1
+#136 CACHED
+
+#137 linux/amd64 turingrk1:mkdir /tmp/build
+#137 CACHED
+
+#138 linux/amd64 turingrk1:finalize /rootfs -> /rootfs
+#138 CACHED
+
+#139 linux/amd64 rockpro64:mkdir /tmp/build
+#139 CACHED
+
+#140 linux/amd64 rockpro64:install-1
+#140 CACHED
+
+#141 linux/amd64 rockpro64:mkdir /tmp/build
+#141 CACHED
+
+#142 linux/amd64 rockpro64:context /installers/rockpro64 -> /pkg
+#142 CACHED
+
+#143 linux/amd64 rockpro64:build-1
+#143 CACHED
+
+#144 linux/amd64 rockpro64:prepare-0
+#144 CACHED
+
+#145 linux/amd64 rockpi4:finalize /rootfs -> /rootfs
+#145 CACHED
+
+#146 linux/amd64 nanopi-r5s:build-1
+#146 CACHED
+
+#147 linux/amd64 nanopi-r5s:mkdir /tmp/build
+#147 CACHED
+
+#148 linux/amd64 nanopi-r5s:prepare-0
+#148 CACHED
+
+#149 linux/amd64 nanopi-r5s:install-1
+#149 CACHED
+
+#150 linux/amd64 nanopi-r5s:mkdir /tmp/build
+#150 CACHED
+
+#151 linux/amd64 nanopi-r5s:context /installers/nanopi-r5s -> /pkg
+#151 CACHED
+
+#152 linux/amd64 helios64:prepare-0
+#152 CACHED
+
+#153 linux/amd64 helios64:mkdir /tmp/build
+#153 CACHED
+
+#154 linux/amd64 helios64:install-1
+#154 CACHED
+
+#155 linux/amd64 helios64:mkdir /tmp/build
+#155 CACHED
+
+#156 linux/amd64 helios64:context /installers/helios64 -> /pkg
+#156 CACHED
+
+#157 linux/amd64 helios64:build-1
+#157 CACHED
+
+#158 linux/amd64 helios64:finalize /rootfs -> /rootfs
+#158 CACHED
+
+#159 linux/amd64 rock64:build-1
+#159 CACHED
+
+#160 linux/amd64 rock64:prepare-0
+#160 CACHED
+
+#161 linux/amd64 rock64:install-1
+#161 CACHED
+
+#162 linux/amd64 rock64:mkdir /tmp/build
+#162 CACHED
+
+#163 linux/amd64 rock64:context /installers/rock64 -> /pkg
+#163 CACHED
+
+#164 linux/amd64 rock64:mkdir /tmp/build
+#164 CACHED
+
+#165 linux/amd64 nanopi-r4s:context /installers/nanopi-r4s -> /pkg
+#165 CACHED
+
+#166 linux/amd64 nanopi-r4s:build-1
+#166 CACHED
+
+#167 linux/amd64 nanopi-r4s:mkdir /tmp/build
+#167 CACHED
+
+#168 linux/amd64 nanopi-r4s:mkdir /tmp/build
+#168 CACHED
+
+#169 linux/amd64 nanopi-r4s:prepare-0
+#169 CACHED
+
+#170 linux/amd64 nanopi-r4s:install-1
+#170 CACHED
+
+#171 linux/amd64 rockpi4c:build-1
+#171 CACHED
+
+#172 linux/amd64 rockpi4c:prepare-0
+#172 CACHED
+
+#173 linux/amd64 rockpi4c:mkdir /tmp/build
+#173 CACHED
+
+#174 linux/amd64 rockpi4c:context /installers/rockpi4c -> /pkg
+#174 CACHED
+
+#175 linux/amd64 rockpi4c:install-1
+#175 CACHED
+
+#176 linux/amd64 rockpi4c:mkdir /tmp/build
+#176 CACHED
+
+#177 linux/amd64 rockpro64:finalize /rootfs -> /rootfs
+#177 CACHED
+
+#178 linux/amd64 nanopi-r4s:finalize /rootfs -> /rootfs
+#178 CACHED
+
+#179 linux/amd64 rockpi4c:finalize /rootfs -> /rootfs
+#179 CACHED
+
+#180 linux/amd64 rock64:finalize /rootfs -> /rootfs
+#180 CACHED
+
+#181 linux/amd64 nanopi-r5s:finalize /rootfs -> /rootfs
+#181 CACHED
+
+#182 linux/amd64 orangepi-5-plus:context /installers/orangepi-5-plus -> /pkg
+#182 CACHED
+
+#183 linux/amd64 orangepi-5-plus:install-1
+#183 CACHED
+
+#184 linux/amd64 orangepi-5-plus:prepare-0
+#184 CACHED
+
+#185 linux/amd64 orangepi-5-plus:mkdir /tmp/build
+#185 CACHED
+
+#186 linux/amd64 orangepi-5-plus:mkdir /tmp/build
+#186 CACHED
+
+#187 linux/amd64 orangepi-5-plus:build-1
+#187 CACHED
+
+#188 linux/amd64 orangepi-5-pro:install-1
+#188 CACHED
+
+#189 linux/amd64 orangepi-5-pro:mkdir /tmp/build
+#189 CACHED
+
+#190 linux/amd64 orangepi-5-pro:build-1
+#190 CACHED
+
+#191 linux/amd64 orangepi-5-pro:context /installers/orangepi-5-pro -> /pkg
+#191 CACHED
+
+#192 linux/amd64 orangepi-5-pro:mkdir /tmp/build
+#192 CACHED
+
+#193 linux/amd64 orangepi-5-pro:prepare-0
+#193 CACHED
+
+#194 linux/amd64 orangepi-5-plus:finalize /rootfs -> /rootfs
+#194 CACHED
+
+#195 linux/amd64 orangepi-5-pro:finalize /rootfs -> /rootfs
+#195 CACHED
+
+#196 linux/amd64 odroid-m1:build-1
+#196 CACHED
+
+#197 linux/amd64 odroid-m1:mkdir /tmp/build
+#197 CACHED
+
+#198 linux/amd64 odroid-m1:prepare-0
+#198 CACHED
+
+#199 linux/amd64 odroid-m1:context /installers/odroid-m1 -> /pkg
+#199 CACHED
+
+#200 linux/amd64 odroid-m1:install-1
+#200 CACHED
+
+#201 linux/amd64 odroid-m1:mkdir /tmp/build
+#201 CACHED
+
+#202 linux/amd64 odroid-m1:finalize /rootfs -> /rootfs
+#202 CACHED
+
+#203 linux/amd64 radxa-zero-3e:context /installers/radxa-zero-3e -> /pkg
+#203 CACHED
+
+#204 linux/amd64 radxa-zero-3e:install-1
+#204 CACHED
+
+#205 linux/amd64 radxa-zero-3e:build-1
+#205 CACHED
+
+#206 linux/amd64 radxa-zero-3e:mkdir /tmp/build
+#206 CACHED
+
+#207 linux/amd64 radxa-zero-3e:prepare-0
+#207 CACHED
+
+#208 linux/amd64 radxa-zero-3e:mkdir /tmp/build
+#208 CACHED
+
+#209 linux/amd64 radxa-zero-3e:finalize /rootfs -> /rootfs
+#209 CACHED
+
+#210 linux/amd64 orangepi-5:mkdir /tmp/build
+#210 CACHED
+
+#211 linux/amd64 orangepi-5:mkdir /tmp/build
+#211 CACHED
+
+#212 linux/amd64 orangepi-5:context /installers/orangepi-5 -> /pkg
+#212 CACHED
+
+#213 linux/amd64 orangepi-5:build-1
+#213 CACHED
+
+#214 linux/amd64 orangepi-5:install-1
+#214 CACHED
+
+#215 linux/amd64 orangepi-5:prepare-0
+#215 CACHED
+
+#216 linux/amd64 orangepi-5:finalize /rootfs -> /rootfs
+#216 CACHED
+
+#217 linux/amd64 cksum
+#217 resolve ghcr.io/siderolabs/stagex/core-busybox:1.36.1@sha256:c0b551b47d8f1ac2fd5f4712eafddb8717e6e563a47203e02f94f944f64c18b2 0.3s done
+#217 DONE 0.3s
+
+#218 docker-image://cgr.dev/chainguard/wolfi-base@sha256:211327e3db292fe34d2f867ff45cc3a1b4b9037acca85f8a88c8522cabfa1348
+#218 resolve cgr.dev/chainguard/wolfi-base@sha256:211327e3db292fe34d2f867ff45cc3a1b4b9037acca85f8a88c8522cabfa1348
+#218 ...
+
+#219 docker-image://ghcr.io/siderolabs/tools:v1.10.0
+#219 resolve ghcr.io/siderolabs/tools:v1.10.0 0.4s done
+#219 DONE 0.4s
+
+#220 linux/arm64 dtb-turingrk1:copy
+#220 CACHED
+
+#221 linux/arm64 base:finalize /rootfs -> /
+#221 CACHED
+
+#222 linux/arm64 base:copy --from ghcr.io/siderolabs/tools:v1.10.0 / -> /rootfs
+#222 CACHED
+
+#223 linux/arm64 helios64:install-1
+#223 CACHED
+
+#224 linux/arm64 helios64:context /installers/helios64 -> /pkg
+#224 CACHED
+
+#225 linux/arm64 helios64:build-1
+#225 CACHED
+
+#226 linux/arm64 base:context /internal/base -> /pkg
+#226 CACHED
+
+#227 linux/arm64 helios64:prepare-0
+#227 CACHED
+
+#228 linux/arm64 base:copy
+#228 CACHED
+
+#229 linux/arm64 helios64:mkdir /tmp/build
+#229 CACHED
+
+#230 linux/arm64 helios64:mkdir /tmp/build
+#230 CACHED
+
+#231 linux/arm64 nanopi-r5s:context /installers/nanopi-r5s -> /pkg
+#231 CACHED
+
+#232 linux/arm64 nanopi-r5s:mkdir /tmp/build
+#232 CACHED
+
+#233 linux/arm64 nanopi-r5s:install-1
+#233 CACHED
+
+#234 linux/arm64 nanopi-r5s:mkdir /tmp/build
+#234 CACHED
+
+#235 linux/arm64 nanopi-r5s:build-1
+#235 CACHED
+
+#236 linux/arm64 nanopi-r5s:prepare-0
+#236 CACHED
+
+#237 linux/arm64 helios64:finalize /rootfs -> /rootfs
+#237 CACHED
+
+#238 linux/arm64 radxa-zero-3e:context /installers/radxa-zero-3e -> /pkg
+#238 CACHED
+
+#239 linux/arm64 radxa-zero-3e:mkdir /tmp/build
+#239 CACHED
+
+#240 linux/arm64 radxa-zero-3e:mkdir /tmp/build
+#240 CACHED
+
+#241 linux/arm64 radxa-zero-3e:prepare-0
+#241 CACHED
+
+#242 linux/arm64 radxa-zero-3e:build-1
+#242 CACHED
+
+#243 linux/arm64 radxa-zero-3e:install-1
+#243 CACHED
+
+#244 linux/arm64 nanopi-r5s:finalize /rootfs -> /rootfs
+#244 CACHED
+
+#245 linux/arm64 turingrk1:prepare-0
+#245 CACHED
+
+#246 linux/arm64 turingrk1:build-1
+#246 CACHED
+
+#247 linux/arm64 turingrk1:mkdir /tmp/build
+#247 CACHED
+
+#248 linux/arm64 turingrk1:install-1
+#248 CACHED
+
+#249 linux/arm64 turingrk1:context /installers/turingrk1 -> /pkg
+#249 CACHED
+
+#250 linux/arm64 turingrk1:mkdir /tmp/build
+#250 CACHED
+
+#251 linux/arm64 rockpi4c:mkdir /tmp/build
+#251 CACHED
+
+#252 linux/arm64 rockpi4c:install-1
+#252 CACHED
+
+#253 linux/arm64 rockpi4c:prepare-0
+#253 CACHED
+
+#254 linux/arm64 rockpi4c:build-1
+#254 CACHED
+
+#255 linux/arm64 rockpi4c:mkdir /tmp/build
+#255 CACHED
+
+#256 linux/arm64 rockpi4c:context /installers/rockpi4c -> /pkg
+#256 CACHED
+
+#257 linux/arm64 radxa-zero-3e:finalize /rootfs -> /rootfs
+#257 CACHED
+
+#258 linux/arm64 rockpi4c:finalize /rootfs -> /rootfs
+#258 CACHED
+
+#259 linux/arm64 turingrk1:finalize /rootfs -> /rootfs
+#259 CACHED
+
+#260 linux/arm64 rockpro64:install-1
+#260 CACHED
+
+#261 linux/arm64 rockpro64:context /installers/rockpro64 -> /pkg
+#261 CACHED
+
+#262 linux/arm64 rockpro64:mkdir /tmp/build
+#262 CACHED
+
+#263 linux/arm64 rockpro64:mkdir /tmp/build
+#263 CACHED
+
+#264 linux/arm64 rockpro64:prepare-0
+#264 CACHED
+
+#265 linux/arm64 rockpro64:build-1
+#265 CACHED
+
+#266 linux/arm64 rock4cplus:install-1
+#266 CACHED
+
+#267 linux/arm64 rock4cplus:build-1
+#267 CACHED
+
+#268 linux/arm64 rock4cplus:context /installers/rock4cplus -> /pkg
+#268 CACHED
+
+#269 linux/arm64 rock4cplus:mkdir /tmp/build
+#269 CACHED
+
+#270 linux/arm64 rock4cplus:mkdir /tmp/build
+#270 CACHED
+
+#271 linux/arm64 rock4cplus:prepare-0
+#271 CACHED
+
+#272 linux/arm64 rockpro64:finalize /rootfs -> /rootfs
+#272 CACHED
+
+#273 linux/arm64 nanopi-r4s:mkdir /tmp/build
+#273 CACHED
+
+#274 linux/arm64 nanopi-r4s:prepare-0
+#274 CACHED
+
+#275 linux/arm64 nanopi-r4s:install-1
+#275 CACHED
+
+#276 linux/arm64 nanopi-r4s:mkdir /tmp/build
+#276 CACHED
+
+#277 linux/arm64 nanopi-r4s:context /installers/nanopi-r4s -> /pkg
+#277 CACHED
+
+#278 linux/arm64 nanopi-r4s:build-1
+#278 CACHED
+
+#279 linux/arm64 rock64:prepare-0
+#279 CACHED
+
+#280 linux/arm64 rock64:mkdir /tmp/build
+#280 CACHED
+
+#281 linux/arm64 rock64:mkdir /tmp/build
+#281 CACHED
+
+#282 linux/arm64 rock64:context /installers/rock64 -> /pkg
+#282 CACHED
+
+#283 linux/arm64 rock64:build-1
+#283 CACHED
+
+#284 linux/arm64 rock64:install-1
+#284 CACHED
+
+#285 linux/arm64 rock4cplus:finalize /rootfs -> /rootfs
+#285 CACHED
+
+#286 linux/arm64 nanopi-r4s:finalize /rootfs -> /rootfs
+#286 CACHED
+
+#287 linux/arm64 rock64:finalize /rootfs -> /rootfs
+#287 CACHED
+
+#288 linux/arm64 rock5a:mkdir /tmp/build
+#288 CACHED
+
+#289 linux/arm64 rock5a:install-1
+#289 CACHED
+
+#290 linux/arm64 rock5a:context /installers/rock5a -> /pkg
+#290 CACHED
+
+#291 linux/arm64 rock5a:prepare-0
+#291 CACHED
+
+#292 linux/arm64 rock5a:build-1
+#292 CACHED
+
+#293 linux/arm64 rock5a:mkdir /tmp/build
+#293 CACHED
+
+#294 linux/arm64 odroid-m1:context /installers/odroid-m1 -> /pkg
+#294 CACHED
+
+#295 linux/arm64 odroid-m1:install-1
+#295 CACHED
+
+#296 linux/arm64 odroid-m1:prepare-0
+#296 CACHED
+
+#297 linux/arm64 odroid-m1:mkdir /tmp/build
+#297 CACHED
+
+#298 linux/arm64 odroid-m1:mkdir /tmp/build
+#298 CACHED
+
+#299 linux/arm64 odroid-m1:build-1
+#299 CACHED
+
+#300 linux/arm64 rockpi4:mkdir /tmp/build
+#300 CACHED
+
+#301 linux/arm64 rockpi4:context /installers/rockpi4 -> /pkg
+#301 CACHED
+
+#302 linux/arm64 rockpi4:mkdir /tmp/build
+#302 CACHED
+
+#303 linux/arm64 rockpi4:build-1
+#303 CACHED
+
+#304 linux/arm64 rockpi4:install-1
+#304 CACHED
+
+#305 linux/arm64 rockpi4:prepare-0
+#305 CACHED
+
+#306 linux/arm64 odroid-m1:finalize /rootfs -> /rootfs
+#306 CACHED
+
+#307 linux/arm64 rock5a:finalize /rootfs -> /rootfs
+#307 CACHED
+
+#308 linux/arm64 rockpi4:finalize /rootfs -> /rootfs
+#308 CACHED
+
+#309 linux/arm64 orangepi-5-plus:mkdir /tmp/build
+#309 CACHED
+
+#310 linux/arm64 orangepi-5-plus:mkdir /tmp/build
+#310 CACHED
+
+#311 linux/arm64 orangepi-5-plus:build-1
+#311 CACHED
+
+#312 linux/arm64 orangepi-5-plus:install-1
+#312 CACHED
+
+#313 linux/arm64 orangepi-5-plus:prepare-0
+#313 CACHED
+
+#314 linux/arm64 orangepi-5-plus:context /installers/orangepi-5-plus -> /pkg
+#314 CACHED
+
+#315 linux/arm64 rock4se:mkdir /tmp/build
+#315 CACHED
+
+#316 linux/arm64 rock4se:prepare-0
+#316 CACHED
+
+#317 linux/arm64 rock4se:mkdir /tmp/build
+#317 CACHED
+
+#318 linux/arm64 rock4se:install-1
+#318 CACHED
+
+#319 linux/arm64 rock4se:build-1
+#319 CACHED
+
+#320 linux/arm64 rock4se:context /installers/rock4se -> /pkg
+#320 CACHED
+
+#321 linux/arm64 orangepi-5-pro:prepare-0
+#321 CACHED
+
+#322 linux/arm64 orangepi-5-pro:build-1
+#322 CACHED
+
+#323 linux/arm64 orangepi-5-pro:install-1
+#323 CACHED
+
+#324 linux/arm64 orangepi-5-pro:mkdir /tmp/build
+#324 CACHED
+
+#325 linux/arm64 orangepi-5-pro:mkdir /tmp/build
+#325 CACHED
+
+#326 linux/arm64 orangepi-5-pro:context /installers/orangepi-5-pro -> /pkg
+#326 CACHED
+
+#327 linux/arm64 rock5b:mkdir /tmp/build
+#327 CACHED
+
+#328 linux/arm64 rock5b:install-1
+#328 CACHED
+
+#329 linux/arm64 rock5b:prepare-0
+#329 CACHED
+
+#330 linux/arm64 rock5b:context /installers/rock5b -> /pkg
+#330 CACHED
+
+#331 linux/arm64 rock5b:mkdir /tmp/build
+#331 CACHED
+
+#332 linux/arm64 rock5b:build-1
+#332 CACHED
+
+#333 linux/arm64 orangepi-5-plus:finalize /rootfs -> /rootfs
+#333 CACHED
+
+#334 linux/arm64 rock4se:finalize /rootfs -> /rootfs
+#334 CACHED
+
+#335 linux/arm64 orangepi-5:build-1
+#335 CACHED
+
+#336 linux/arm64 orangepi-5:mkdir /tmp/build
+#336 CACHED
+
+#337 linux/arm64 orangepi-5:install-1
+#337 CACHED
+
+#338 linux/arm64 orangepi-5:prepare-0
+#338 CACHED
+
+#339 linux/arm64 orangepi-5:context /installers/orangepi-5 -> /pkg
+#339 CACHED
+
+#340 linux/arm64 orangepi-5:mkdir /tmp/build
+#340 CACHED
+
+#341 linux/arm64 orangepi-5-pro:finalize /rootfs -> /rootfs
+#341 CACHED
+
+#342 linux/arm64 orangepi-5:finalize /rootfs -> /rootfs
+#342 CACHED
+
+#343 linux/arm64 rock5b:finalize /rootfs -> /rootfs
+#343 CACHED
+
+#344 linux/arm64 orangepi-r1-plus-lts:build-1
+#344 CACHED
+
+#345 linux/arm64 orangepi-r1-plus-lts:install-1
+#345 CACHED
+
+#346 linux/arm64 orangepi-r1-plus-lts:mkdir /tmp/build
+#346 CACHED
+
+#347 linux/arm64 orangepi-r1-plus-lts:mkdir /tmp/build
+#347 CACHED
+
+#348 linux/arm64 orangepi-r1-plus-lts:context /installers/orangepi-r1-plus-lts -> /pkg
+#348 CACHED
+
+#349 linux/arm64 orangepi-r1-plus-lts:prepare-0
+#349 CACHED
+
+#350 linux/arm64 orangepi-r1-plus-lts:finalize /rootfs -> /rootfs
+#350 CACHED
+
+#351 linux/arm64 cksum
+#351 resolve ghcr.io/siderolabs/stagex/core-busybox:1.36.1@sha256:c0b551b47d8f1ac2fd5f4712eafddb8717e6e563a47203e02f94f944f64c18b2 0.4s done
+#351 DONE 0.4s
+
+#352 linux/arm64 dtb-turingrk1:finalize /rootfs -> /
+#352 CACHED
+
+#353 linux/arm64 dtb-turingrk1:prepare-0
+#353 CACHED
+
+#354 linux/arm64 dtb-turingrk1:install-0
+#354 CACHED
+
+#355 linux/arm64 dtb-turingrk1:build-0
+#355 CACHED
+
+#356 linux/arm64 dtb-turingrk1:prepare-0
+#356 CACHED
+
+#357 linux/arm64 dtb-turingrk1:cksum-prepare
+#357 CACHED
+
+#358 linux/arm64 dtb-turingrk1:cksum-verify
+#358 CACHED
+
+#359 linux/arm64 dtb-turingrk1:context /artifacts/dtb/turingrk1 -> /pkg
+#359 CACHED
+
+#360 linux/arm64 dtb-turingrk1:download
+#360 CACHED
+
+#361 linux/arm64 dtb-turingrk1:download finalize
+#361 CACHED
+
+#362 linux/arm64 dtb-turingrk1:mkdir /tmp/build
+#362 CACHED
+
+#363 linux/arm64 sbc-rockchip:copy --from dtb-turingrk1 /dtb/rockchip/rk3588-turing-rk1.dtb -> /rootfs/artifacts/arm64/dtb/rockchip/rk3588-turing-rk1.dtb
+#363 CACHED
+
+#364 linux/arm64 arm-trusted-firmware-rk3399:context /artifacts/arm-trusted-firmware/rk3399 -> /pkg
+#364 CACHED
+
+#365 linux/arm64 u-boot-rock4se:cksum-verify
+#365 CACHED
+
+#366 linux/arm64 arm-trusted-firmware-rk3399:install-0
+#366 CACHED
+
+#367 linux/arm64 arm-trusted-firmware-rk3328:cksum-prepare
+#367 CACHED
+
+#368 linux/arm64 u-boot-rockpi4:prepare-0
+#368 CACHED
+
+#369 linux/arm64 u-boot-rockpi4:context /artifacts/rockpi4/u-boot -> /pkg
+#369 CACHED
+
+#370 linux/arm64 arm-trusted-firmware-rk3328:cksum-verify
+#370 CACHED
+
+#371 linux/arm64 arm-trusted-firmware-rk3399:mkdir /tmp/build
+#371 CACHED
+
+#372 linux/arm64 u-boot-rock4se:download finalize
+#372 CACHED
+
+#373 linux/arm64 u-boot-rockpi4:download
+#373 CACHED
+
+#374 linux/arm64 arm-trusted-firmware-rk3328:download finalize
+#374 CACHED
+
+#375 linux/arm64 u-boot-rock4se:cksum-prepare
+#375 CACHED
+
+#376 linux/arm64 arm-trusted-firmware-rk3399:download
+#376 CACHED
+
+#377 linux/arm64 u-boot-rockpi4:mkdir /tmp/build
+#377 CACHED
+
+#378 linux/arm64 arm-trusted-firmware-rk3399:prepare-0
+#378 CACHED
+
+#379 linux/arm64 arm-trusted-firmware-rk3399:build-0
+#379 CACHED
+
+#380 linux/arm64 u-boot-rock4cplus:copy
+#380 CACHED
+
+#381 linux/arm64 arm-trusted-firmware-rk3399:finalize /rootfs -> /libs
+#381 CACHED
+
+#382 linux/arm64 u-boot-orangepi-r1-plus-lts:prepare-0
+#382 CACHED
+
+#383 linux/arm64 arm-trusted-firmware-rk3328:prepare-0
+#383 CACHED
+
+#384 linux/arm64 u-boot-rock64:copy
+#384 CACHED
+
+#385 linux/arm64 arm-trusted-firmware-rk3328:finalize /rootfs -> /libs
+#385 CACHED
+
+#386 linux/arm64 u-boot-orangepi-r1-plus-lts:download
+#386 CACHED
+
+#387 linux/arm64 arm-trusted-firmware-rk3328:install-0
+#387 CACHED
+
+#388 linux/arm64 u-boot-orangepi-r1-plus-lts:mkdir /tmp/build
+#388 CACHED
+
+#389 linux/arm64 u-boot-orangepi-r1-plus-lts:context /artifacts/orangepi-r1-plus-lts/u-boot -> /pkg
+#389 CACHED
+
+#390 linux/arm64 arm-trusted-firmware-rk3328:build-0
+#390 CACHED
+
+#391 linux/arm64 arm-trusted-firmware-rk3328:download
+#391 CACHED
+
+#392 linux/arm64 arm-trusted-firmware-rk3328:mkdir /tmp/build
+#392 CACHED
+
+#393 linux/arm64 arm-trusted-firmware-rk3328:context /artifacts/arm-trusted-firmware/rk3328 -> /pkg
+#393 CACHED
+
+#394 linux/arm64 u-boot-rockpi4:prepare-0
+#394 CACHED
+
+#395 linux/arm64 u-boot-helios64:mkdir /tmp/build
+#395 CACHED
+
+#396 linux/arm64 u-boot-helios64:prepare-0
+#396 CACHED
+
+#397 linux/arm64 u-boot-helios64:context /artifacts/helios64/u-boot -> /pkg
+#397 CACHED
+
+#398 linux/arm64 u-boot-helios64:cksum-prepare
+#398 CACHED
+
+#399 linux/arm64 u-boot-helios64:cksum-verify
+#399 CACHED
+
+#400 linux/arm64 u-boot-helios64:download finalize
+#400 CACHED
+
+#401 linux/arm64 u-boot-helios64:download
+#401 CACHED
+
+#402 linux/arm64 u-boot-orangepi-r1-plus-lts:prepare-0
+#402 CACHED
+
+#403 linux/arm64 u-boot-nanopi-r4s:context /artifacts/nanopi-r4s/u-boot -> /pkg
+#403 CACHED
+
+#404 linux/arm64 u-boot-nanopi-r4s:download
+#404 CACHED
+
+#405 linux/arm64 u-boot-nanopi-r4s:mkdir /tmp/build
+#405 CACHED
+
+#406 linux/arm64 u-boot-nanopi-r4s:prepare-0
+#406 CACHED
+
+#407 linux/arm64 u-boot-rock4cplus:mkdir /tmp/build
+#407 CACHED
+
+#408 linux/arm64 u-boot-rock4cplus:download
+#408 CACHED
+
+#409 linux/arm64 u-boot-rock4cplus:context /artifacts/rock4cplus/u-boot -> /pkg
+#409 CACHED
+
+#410 linux/arm64 u-boot-rock4cplus:prepare-0
+#410 CACHED
+
+#411 linux/arm64 u-boot-nanopi-r4s:prepare-0
+#411 CACHED
+
+#412 linux/arm64 u-boot-rockpro64:download
+#412 CACHED
+
+#413 linux/arm64 u-boot-rockpro64:prepare-0
+#413 CACHED
+
+#414 linux/arm64 u-boot-rockpro64:mkdir /tmp/build
+#414 CACHED
+
+#415 linux/arm64 u-boot-rockpro64:context /artifacts/rockpro64/u-boot -> /pkg
+#415 CACHED
+
+#416 linux/arm64 u-boot-helios64:prepare-0
+#416 CACHED
+
+#417 linux/arm64 u-boot-rockpro64:prepare-0
+#417 CACHED
+
+#418 linux/arm64 u-boot-rock4se:prepare-0
+#418 CACHED
+
+#419 linux/arm64 rkbin-rk3399:mkdir /tmp/build
+#419 CACHED
+
+#420 linux/arm64 u-boot-rock4se:context /artifacts/rock4se/u-boot -> /pkg
+#420 CACHED
+
+#421 linux/arm64 u-boot-rock4se:copy
+#421 CACHED
+
+#422 linux/arm64 rkbin-rk3399:prepare-0
+#422 CACHED
+
+#423 linux/arm64 rkbin-rk3399:context /artifacts/rkbin/rk3399 -> /pkg
+#423 CACHED
+
+#424 linux/arm64 rkbin-rk3399:cksum-prepare
+#424 CACHED
+
+#425 linux/arm64 rkbin-rk3399:install-0
+#425 CACHED
+
+#426 linux/arm64 rkbin-rk3399:download
+#426 CACHED
+
+#427 linux/arm64 u-boot-rock4se:mkdir /tmp/build
+#427 CACHED
+
+#428 linux/arm64 u-boot-rock4se:download
+#428 CACHED
+
+#429 linux/arm64 rkbin-rk3399:download finalize
+#429 CACHED
+
+#430 linux/arm64 rkbin-rk3399:finalize /rootfs -> /libs
+#430 CACHED
+
+#431 linux/arm64 rkbin-rk3399:cksum-verify
+#431 CACHED
+
+#432 linux/arm64 arm-trusted-firmware-rk3588:cksum-verify
+#432 CACHED
+
+#433 linux/arm64 rkbin-rk3568:prepare-0
+#433 CACHED
+
+#434 linux/arm64 arm-trusted-firmware-rk3568:context /artifacts/arm-trusted-firmware/rk3568 -> /pkg
+#434 CACHED
+
+#435 linux/arm64 u-boot-odroid-m1:mkdir /tmp/build
+#435 CACHED
+
+#436 linux/arm64 u-boot-odroid-m1:download
+#436 CACHED
+
+#437 linux/arm64 rkbin-rk3568:context /artifacts/rkbin/rk3568 -> /pkg
+#437 CACHED
+
+#438 linux/arm64 arm-trusted-firmware-rk3568:install-0
+#438 CACHED
+
+#439 linux/arm64 rkbin-rk3568:download
+#439 CACHED
+
+#440 linux/arm64 arm-trusted-firmware-rk3568:build-0
+#440 CACHED
+
+#441 linux/arm64 arm-trusted-firmware-rk3588:cksum-prepare
+#441 CACHED
+
+#442 linux/arm64 u-boot-odroid-m1:prepare-0
+#442 CACHED
+
+#443 linux/arm64 arm-trusted-firmware-rk3568:download
+#443 CACHED
+
+#444 linux/arm64 rkbin-rk3568:finalize /rootfs -> /libs
+#444 CACHED
+
+#445 linux/arm64 arm-trusted-firmware-rk3588:download finalize
+#445 CACHED
+
+#446 linux/arm64 u-boot-odroid-m1:copy
+#446 CACHED
+
+#447 linux/arm64 rkbin-rk3568:install-0
+#447 CACHED
+
+#448 linux/arm64 arm-trusted-firmware-rk3568:prepare-0
+#448 CACHED
+
+#449 linux/arm64 rkbin-rk3568:mkdir /tmp/build
+#449 CACHED
+
+#450 linux/arm64 u-boot-odroid-m1:context /artifacts/odroid-m1/u-boot -> /pkg
+#450 CACHED
+
+#451 linux/arm64 arm-trusted-firmware-rk3568:mkdir /tmp/build
+#451 CACHED
+
+#452 linux/arm64 arm-trusted-firmware-rk3568:finalize /rootfs -> /libs
+#452 CACHED
+
+#453 linux/arm64 u-boot-rock4cplus:prepare-0
+#453 CACHED
+
+#454 linux/arm64 u-boot-rockpi4c:context /artifacts/rockpi4c/u-boot -> /pkg
+#454 CACHED
+
+#455 linux/arm64 u-boot-rockpi4c:download
+#455 CACHED
+
+#456 linux/arm64 u-boot-rockpi4c:prepare-0
+#456 CACHED
+
+#457 linux/arm64 u-boot-rockpi4c:mkdir /tmp/build
+#457 CACHED
+
+#458 linux/arm64 u-boot-odroid-m1:prepare-0
+#458 CACHED
+
+#459 linux/arm64 u-boot-rockpi4c:prepare-0
+#459 CACHED
+
+#460 linux/arm64 u-boot-rock64:context /artifacts/rock64/u-boot -> /pkg
+#460 CACHED
+
+#461 linux/arm64 u-boot-rock64:mkdir /tmp/build
+#461 CACHED
+
+#462 linux/arm64 u-boot-rock64:download
+#462 CACHED
+
+#463 linux/arm64 u-boot-rock64:prepare-0
+#463 CACHED
+
+#464 linux/arm64 u-boot-nanopi-r5s:context /artifacts/nanopi-r5s/u-boot -> /pkg
+#464 CACHED
+
+#465 linux/arm64 u-boot-nanopi-r5s:download
+#465 CACHED
+
+#466 linux/arm64 u-boot-nanopi-r5s:prepare-0
+#466 CACHED
+
+#467 linux/arm64 u-boot-nanopi-r5s:mkdir /tmp/build
+#467 CACHED
+
+#468 linux/arm64 u-boot-radxa-zero-3:download
+#468 CACHED
+
+#469 linux/arm64 rkbin-rk3566:install-0
+#469 CACHED
+
+#470 linux/arm64 rkbin-rk3566:download
+#470 CACHED
+
+#471 linux/arm64 rkbin-rk3566:finalize /rootfs -> /libs
+#471 CACHED
+
+#472 linux/arm64 u-boot-turingrk1:cksum-verify
+#472 CACHED
+
+#473 linux/arm64 u-boot-turingrk1:cksum-prepare
+#473 CACHED
+
+#474 linux/arm64 rkbin-rk3566:context /artifacts/rkbin/rk3566 -> /pkg
+#474 CACHED
+
+#475 linux/arm64 u-boot-turingrk1:download finalize
+#475 CACHED
+
+#476 linux/arm64 u-boot-radxa-zero-3:prepare-0
+#476 CACHED
+
+#477 linux/arm64 u-boot-radxa-zero-3:mkdir /tmp/build
+#477 CACHED
+
+#478 linux/arm64 u-boot-radxa-zero-3:copy
+#478 CACHED
+
+#479 linux/arm64 rkbin-rk3566:mkdir /tmp/build
+#479 CACHED
+
+#480 linux/arm64 u-boot-radxa-zero-3:context /artifacts/radxa-zero-3/u-boot -> /pkg
+#480 CACHED
+
+#481 linux/arm64 rkbin-rk3566:prepare-0
+#481 CACHED
+
+#482 linux/arm64 u-boot-rock4se:prepare-0
+#482 CACHED
+
+#483 linux/arm64 u-boot-nanopi-r5s:prepare-0
+#483 CACHED
+
+#484 linux/arm64 u-boot-rock64:prepare-0
+#484 CACHED
+
+#485 linux/arm64 u-boot-radxa-zero-3:prepare-0
+#485 CACHED
+
+#486 linux/arm64 u-boot-radxa-zero-3:build-0
+#486 ...
+
+#218 docker-image://cgr.dev/chainguard/wolfi-base@sha256:211327e3db292fe34d2f867ff45cc3a1b4b9037acca85f8a88c8522cabfa1348
+#218 resolve cgr.dev/chainguard/wolfi-base@sha256:211327e3db292fe34d2f867ff45cc3a1b4b9037acca85f8a88c8522cabfa1348 0.6s done
+#218 DONE 0.6s
+
+#487 linux/amd64 rkbin-rk3588:finalize /rootfs -> /libs
+#487 CACHED
+
+#488 linux/amd64 rkbin-rk3588:prepare-0
+#488 CACHED
+
+#489 linux/arm64 u-boot-orangepi-5-pro:copy
+#489 CACHED
+
+#490 linux/amd64 rkbin-rk3588:download
+#490 CACHED
+
+#491 linux/arm64 u-boot-orangepi-5-pro:context /artifacts/orangepi-5-pro/u-boot -> /pkg
+#491 CACHED
+
+#492 linux/amd64 rkbin-rk3588:context /artifacts/rkbin/rk3588 -> /pkg
+#492 CACHED
+
+#493 linux/amd64 rkbin-rk3588:mkdir /tmp/build
+#493 CACHED
+
+#494 linux/arm64 u-boot-orangepi-5-pro:mkdir /tmp/build
+#494 CACHED
+
+#495 linux/amd64 rkbin-rk3588:build-0
+#495 CACHED
+
+#496 linux/amd64 rkbin-rk3588:install-0
+#496 CACHED
+
+#497 linux/arm64 u-boot-orangepi-5-plus:context /artifacts/orangepi-5-plus/u-boot -> /pkg
+#497 CACHED
+
+#498 linux/amd64 rkbin-rk3588:download finalize
+#498 CACHED
+
+#499 linux/arm64 u-boot-orangepi-5-plus:prepare-0
+#499 CACHED
+
+#500 linux/arm64 arm-trusted-firmware-rk3588:install-0
+#500 CACHED
+
+#501 linux/arm64 arm-trusted-firmware-rk3588:finalize /rootfs -> /libs
+#501 CACHED
+
+#502 linux/amd64 rkbin-rk3588:copy
+#502 CACHED
+
+#503 linux/arm64 arm-trusted-firmware-rk3588:context /artifacts/arm-trusted-firmware/rk3588 -> /pkg
+#503 CACHED
+
+#504 linux/amd64 rkbin-rk3588:cksum-verify
+#504 CACHED
+
+#505 linux/arm64 u-boot-orangepi-5-plus:download
+#505 CACHED
+
+#506 linux/arm64 arm-trusted-firmware-rk3588:mkdir /tmp/build
+#506 CACHED
+
+#507 linux/arm64 arm-trusted-firmware-rk3588:prepare-0
+#507 CACHED
+
+#508 linux/amd64 rkbin-rk3588:install-0
+#508 CACHED
+
+#509 linux/amd64 rkbin-rk3588:prepare-0
+#509 CACHED
+
+#510 linux/amd64 rkbin-rk3588:mkdir /tmp/build
+#510 CACHED
+
+#511 linux/amd64 rkbin-rk3588:finalize /rootfs -> /libs
+#511 CACHED
+
+#512 linux/amd64 rkbin-rk3588:download
+#512 CACHED
+
+#513 linux/amd64 rkbin-rk3588:build-0
+#513 CACHED
+
+#514 linux/amd64 rkbin-rk3588:cksum-prepare
+#514 CACHED
+
+#515 linux/arm64 u-boot-orangepi-5-plus:mkdir /tmp/build
+#515 CACHED
+
+#516 linux/arm64 arm-trusted-firmware-rk3588:build-0
+#516 CACHED
+
+#517 linux/arm64 arm-trusted-firmware-rk3588:download
+#517 CACHED
+
+#518 linux/arm64 u-boot-orangepi-5-plus:copy
+#518 CACHED
+
+#519 linux/amd64 rkbin-rk3588:context /artifacts/rkbin/rk3588 -> /pkg
+#519 CACHED
+
+#520 linux/arm64 u-boot-rock5b:download
+#520 CACHED
+
+#521 linux/amd64 rkbin-rk3588:mkdir /tmp/build
+#521 CACHED
+
+#522 linux/arm64 u-boot-rock5b:mkdir /tmp/build
+#522 CACHED
+
+#523 linux/arm64 u-boot-rock5b:copy
+#523 CACHED
+
+#524 linux/amd64 rkbin-rk3588:prepare-0
+#524 CACHED
+
+#525 linux/amd64 rkbin-rk3588:download
+#525 CACHED
+
+#526 linux/amd64 rkbin-rk3588:finalize /rootfs -> /libs
+#526 CACHED
+
+#527 linux/amd64 rkbin-rk3588:build-0
+#527 CACHED
+
+#528 linux/amd64 rkbin-rk3588:install-0
+#528 CACHED
+
+#529 linux/arm64 u-boot-rock5b:context /artifacts/rock5b/u-boot -> /pkg
+#529 CACHED
+
+#530 linux/arm64 u-boot-rock5b:prepare-0
+#530 CACHED
+
+#531 linux/amd64 rkbin-rk3588:context /artifacts/rkbin/rk3588 -> /pkg
+#531 CACHED
+
+#532 linux/arm64 u-boot-rock5a:copy
+#532 CACHED
+
+#533 linux/amd64 rkbin-rk3588:context /artifacts/rkbin/rk3588 -> /pkg
+#533 CACHED
+
+#534 linux/amd64 rkbin-rk3588:build-0
+#534 CACHED
+
+#535 linux/amd64 rkbin-rk3588:download
+#535 CACHED
+
+#536 linux/amd64 rkbin-rk3588:prepare-0
+#536 CACHED
+
+#537 linux/amd64 rkbin-rk3588:finalize /rootfs -> /libs
+#537 CACHED
+
+#538 linux/arm64 u-boot-rock5a:context /artifacts/rock5a/u-boot -> /pkg
+#538 CACHED
+
+#539 linux/arm64 u-boot-rock5a:download
+#539 CACHED
+
+#540 linux/arm64 u-boot-rock5a:mkdir /tmp/build
+#540 CACHED
+
+#541 linux/amd64 rkbin-rk3588:install-0
+#541 CACHED
+
+#542 linux/arm64 u-boot-rock5a:prepare-0
+#542 CACHED
+
+#543 linux/amd64 rkbin-rk3588:mkdir /tmp/build
+#543 CACHED
+
+#544 linux/arm64 u-boot-orangepi-5-pro:download
+#544 CACHED
+
+#545 linux/arm64 u-boot-rock5a:prepare-0
+#545 CACHED
+
+#546 linux/amd64 rkbin-rk3588:context /artifacts/rkbin/rk3588 -> /pkg
+#546 CACHED
+
+#547 linux/arm64 arm-trusted-firmware-rk3588:download
+#547 CACHED
+
+#548 linux/amd64 rkbin-rk3588:finalize /rootfs -> /libs
+#548 CACHED
+
+#549 linux/amd64 rkbin-rk3588:mkdir /tmp/build
+#549 CACHED
+
+#550 linux/arm64 u-boot-orangepi-5:copy
+#550 CACHED
+
+#551 linux/amd64 rkbin-rk3588:install-0
+#551 CACHED
+
+#552 linux/amd64 rkbin-rk3588:download
+#552 CACHED
+
+#553 linux/amd64 rkbin-rk3588:build-0
+#553 CACHED
+
+#554 linux/arm64 arm-trusted-firmware-rk3588:copy
+#554 CACHED
+
+#555 linux/arm64 arm-trusted-firmware-rk3588:build-0
+#555 CACHED
+
+#556 linux/amd64 rkbin-rk3588:prepare-0
+#556 CACHED
+
+#557 linux/arm64 arm-trusted-firmware-rk3588:finalize /rootfs -> /libs
+#557 CACHED
+
+#558 linux/arm64 u-boot-orangepi-5:prepare-0
+#558 CACHED
+
+#559 linux/arm64 arm-trusted-firmware-rk3588:install-0
+#559 CACHED
+
+#560 linux/arm64 base:finalize /rootfs -> /
+#560 CACHED
+
+#561 linux/arm64 base:context /internal/base -> /pkg
+#561 CACHED
+
+#562 linux/arm64 u-boot-orangepi-5:context /artifacts/orangepi-5/u-boot -> /pkg
+#562 CACHED
+
+#563 linux/arm64 arm-trusted-firmware-rk3588:mkdir /tmp/build
+#563 CACHED
+
+#564 linux/arm64 u-boot-orangepi-5:mkdir /tmp/build
+#564 CACHED
+
+#565 linux/arm64 u-boot-orangepi-5:download
+#565 CACHED
+
+#566 linux/arm64 arm-trusted-firmware-rk3588:context /artifacts/arm-trusted-firmware/rk3588 -> /pkg
+#566 CACHED
+
+#567 linux/arm64 arm-trusted-firmware-rk3588:prepare-0
+#567 CACHED
+
+#568 linux/amd64 rkbin-rk3588:build-0
+#568 CACHED
+
+#569 linux/amd64 rkbin-rk3588:mkdir /tmp/build
+#569 CACHED
+
+#570 linux/arm64 u-boot-turingrk1:context /artifacts/turingrk1/u-boot -> /pkg
+#570 CACHED
+
+#571 linux/amd64 rkbin-rk3588:context /artifacts/rkbin/rk3588 -> /pkg
+#571 CACHED
+
+#572 linux/arm64 u-boot-turingrk1:mkdir /tmp/build
+#572 CACHED
+
+#573 linux/amd64 rkbin-rk3588:prepare-0
+#573 CACHED
+
+#574 linux/arm64 u-boot-turingrk1:download
+#574 CACHED
+
+#575 linux/amd64 rkbin-rk3588:finalize /rootfs -> /libs
+#575 CACHED
+
+#576 linux/arm64 u-boot-turingrk1:copy
+#576 CACHED
+
+#577 linux/amd64 rkbin-rk3588:install-0
+#577 CACHED
+
+#578 linux/amd64 rkbin-rk3588:download
+#578 CACHED
+
+#579 linux/arm64 u-boot-turingrk1:prepare-0
+#579 CACHED
+
+#580 linux/arm64 u-boot-orangepi-5:prepare-0
+#580 CACHED
+
+#581 linux/arm64 u-boot-rock5b:prepare-0
+#581 CACHED
+
+#582 linux/arm64 u-boot-orangepi-5-plus:prepare-0
+#582 CACHED
+
+#583 linux/arm64 u-boot-turingrk1:prepare-0
+#583 CACHED
+
+#584 linux/arm64 u-boot-turingrk1:build-0
+#584 ...
+
+#585 linux/arm64 u-boot-orangepi-5-pro:prepare-0
+#585 0.176 =============== CAN YOU HEAR ME ?!?!?! =====================
+#585 ...
+
+#586 linux/arm64 u-boot-rock4cplus:build-0
+#586 ...
+
+#587 linux/arm64 u-boot-odroid-m1:build-0
+#587 ...
+
+#588 linux/arm64 u-boot-nanopi-r5s:build-0
+#588 ...
+
+#589 linux/arm64 u-boot-orangepi-5-plus:build-0
+#589 ...
+
+#590 linux/arm64 u-boot-helios64:build-0
+#590 ...
+
+#591 linux/arm64 u-boot-nanopi-r4s:build-0
+#591 ...
+
+#592 linux/arm64 u-boot-rockpi4:build-0
+#592 11.08 scripts/kconfig/conf  --syncconfig Kconfig
+#592 ...
+
+#593 linux/arm64 u-boot-rockpi4c:build-0
+#593 11.24 scripts/kconfig/conf  --syncconfig Kconfig
+#593 ...
+
+#594 linux/arm64 u-boot-orangepi-r1-plus-lts:build-0
+#594 11.00 scripts/kconfig/conf  --syncconfig Kconfig
+#594 ...
+
+#595 linux/arm64 u-boot-rock4se:build-0
+#595 10.89 scripts/kconfig/conf  --syncconfig Kconfig
+#595 ...
+
+#596 linux/arm64 u-boot-orangepi-5:build-0
+#596 11.27 scripts/kconfig/conf  --syncconfig Kconfig
+#596 ...
+
+#597 linux/arm64 u-boot-rock5a:build-0
+#597 10.89 scripts/kconfig/conf  --syncconfig Kconfig
+#597 ...
+
+#598 linux/arm64 u-boot-rock5b:build-0
+#598 10.96 scripts/kconfig/conf  --syncconfig Kconfig
+#598 ...
+
+#599 linux/arm64 u-boot-rock64:build-0
+#599 11.32 scripts/kconfig/conf  --syncconfig Kconfig
+#599 ...
+
+#600 linux/arm64 u-boot-rockpro64:build-0
+#600 10.87 scripts/kconfig/conf  --syncconfig Kconfig
+#600 ...
+
+#584 linux/arm64 u-boot-turingrk1:build-0
+#584 11.05 scripts/kconfig/conf  --syncconfig Kconfig
+#584 ...
+
+#590 linux/arm64 u-boot-helios64:build-0
+#590 10.95 scripts/kconfig/conf  --syncconfig Kconfig
+#590 18.71   UPD     include/config.h
+#590 18.74   CFG     u-boot.cfg
+#590 18.75   GEN     include/autoconf.mk.dep
+#590 18.80   CFG     spl/u-boot.cfg
+#590 18.81   CFG     tpl/u-boot.cfg
+#590 19.43   GEN     include/autoconf.mk
+#590 19.51   GEN     tpl/include/autoconf.mk
+#590 ...
+
+#600 linux/arm64 u-boot-rockpro64:build-0
+#600 19.52   UPD     include/config.h
+#600 19.58   GEN     include/autoconf.mk.dep
+#600 19.60   CFG     u-boot.cfg
+#600 19.70   CFG     spl/u-boot.cfg
+#600 19.85   CFG     tpl/u-boot.cfg
+#600 20.96   GEN     tpl/include/autoconf.mk
+#600 ...
+
+#589 linux/arm64 u-boot-orangepi-5-plus:build-0
+#589 10.73 scripts/kconfig/conf  --syncconfig Kconfig
+#589 19.32   UPD     include/config.h
+#589 19.39   CFG     u-boot.cfg
+#589 19.43   GEN     include/autoconf.mk.dep
+#589 19.49   CFG     spl/u-boot.cfg
+#589 20.20   GEN     include/autoconf.mk
+#589 ...
+
+#588 linux/arm64 u-boot-nanopi-r5s:build-0
+#588 11.05 scripts/kconfig/conf  --syncconfig Kconfig
+#588 19.26   UPD     include/config.h
+#588 19.30   CFG     u-boot.cfg
+#588 19.30   GEN     include/autoconf.mk.dep
+#588 19.34   CFG     spl/u-boot.cfg
+#588 20.23   GEN     spl/include/autoconf.mk
+#588 20.25   GEN     include/autoconf.mk
+#588 ...
+
+#591 linux/arm64 u-boot-nanopi-r4s:build-0
+#591 11.02 scripts/kconfig/conf  --syncconfig Kconfig
+#591 20.10   UPD     include/config.h
+#591 20.17   GEN     include/autoconf.mk.dep
+#591 20.18   CFG     u-boot.cfg
+#591 20.28   CFG     tpl/u-boot.cfg
+#591 20.29   CFG     spl/u-boot.cfg
+#591 ...
+
+#486 linux/arm64 u-boot-radxa-zero-3:build-0
+#486 11.09 scripts/kconfig/conf  --syncconfig Kconfig
+#486 19.28   UPD     include/config.h
+#486 19.33   CFG     u-boot.cfg
+#486 19.34   GEN     include/autoconf.mk.dep
+#486 19.41   CFG     spl/u-boot.cfg
+#486 20.20   GEN     include/autoconf.mk
+#486 20.41   GEN     spl/include/autoconf.mk
+#486 ...
+
+#587 linux/arm64 u-boot-odroid-m1:build-0
+#587 10.99 scripts/kconfig/conf  --syncconfig Kconfig
+#587 19.71   UPD     include/config.h
+#587 19.74   CFG     u-boot.cfg
+#587 19.76   GEN     include/autoconf.mk.dep
+#587 19.86   CFG     spl/u-boot.cfg
+#587 21.16   GEN     include/autoconf.mk
+#587 21.27   GEN     spl/include/autoconf.mk
+#587 ...
+
+#586 linux/arm64 u-boot-rock4cplus:build-0
+#586 11.19 scripts/kconfig/conf  --syncconfig Kconfig
+#586 19.81   UPD     include/config.h
+#586 19.86   GEN     include/autoconf.mk.dep
+#586 19.91   CFG     u-boot.cfg
+#586 19.97   CFG     spl/u-boot.cfg
+#586 20.03   CFG     tpl/u-boot.cfg
+#586 21.12   GEN     tpl/include/autoconf.mk
+#586 21.48   GEN     include/autoconf.mk
+#586 21.71   GEN     spl/include/autoconf.mk
+#586 ...
+
+#591 linux/arm64 u-boot-nanopi-r4s:build-0
+#591 21.67   GEN     spl/include/autoconf.mk
+#591 21.80   GEN     tpl/include/autoconf.mk
+#591 21.81   GEN     include/autoconf.mk
+#591 ...
+
+#599 linux/arm64 u-boot-rock64:build-0
+#599 20.08   UPD     include/config.h
+#599 20.13   CFG     u-boot.cfg
+#599 20.17   GEN     include/autoconf.mk.dep
+#599 20.30   CFG     spl/u-boot.cfg
+#599 20.65   CFG     tpl/u-boot.cfg
+#599 21.59   GEN     include/autoconf.mk
+#599 22.06   GEN     spl/include/autoconf.mk
+#599 22.35   GEN     tpl/include/autoconf.mk
+#599 ...
+
+#585 linux/arm64 u-boot-orangepi-5-pro:prepare-0
+#585 28.30 Found patches total 32644
+#585 28.30 drwxr-xr-x   1 root root     4096 Sep  4 04:21 .
+#585 28.30 drwxr-xr-x   1 root root     4096 Sep  4 03:03 ..
+#585 28.30 -rw-rw-r--   1 root root    25723 Jan  7  2025 .azure-pipelines.yml
+#585 28.30 -rw-rw-r--   1 root root      814 Jan  7  2025 .checkpatch.conf
+#585 28.30 -rw-rw-r--   1 root root       50 Jan  7  2025 .get_maintainer.conf
+#585 28.30 -rw-rw-r--   1 root root       32 Jan  7  2025 .get_maintainer.ignore
+#585 28.30 -rw-rw-r--   1 root root      207 Jan  7  2025 .gitattributes
+#585 28.30 drwxrwxr-x   2 root root     4096 Jan  7  2025 .github
+#585 28.30 -rw-rw-r--   1 root root     1571 Jan  7  2025 .gitignore
+#585 28.30 -rw-rw-r--   1 root root    18704 Jan  7  2025 .gitlab-ci.yml
+#585 28.30 -rw-rw-r--   1 root root     8741 Jan  7  2025 .mailmap
+#585 28.30 -rw-rw-r--   1 root root      492 Jan  7  2025 .readthedocs.yml
+#585 28.30 -rw-rw-r--   1 root root      783 Jan  7  2025 Kbuild
+#585 28.30 -rw-rw-r--   1 root root    26791 Jan  7  2025 Kconfig
+#585 28.30 drwxrwxr-x   2 root root     4096 Jan  7  2025 Licenses
+#585 28.30 -rw-rw-r--   1 root root    48850 Jan  7  2025 MAINTAINERS
+#585 28.30 -rw-rw-r--   1 root root    84594 Jan  7  2025 Makefile
+#585 28.30 -rw-rw-r--   1 root root    87312 Jan  7  2025 README
+#585 28.30 drwxrwxr-x   2 root root     4096 Jan  7  2025 api
+#585 28.30 drwxrwxr-x  14 root root     4096 Jan  7  2025 arch
+#585 28.30 drwxrwxr-x 204 root root     4096 Jan  7  2025 board
+#585 28.30 drwxrwxr-x   2 root root     4096 Jan  7  2025 boot
+#585 28.30 drwxrwxr-x  10 root root     4096 Jan  7  2025 cmd
+#585 28.30 drwxrwxr-x   5 root root     4096 Jan  7  2025 common
+#585 28.30 -rw-rw-r--   1 root root     2180 Jan  7  2025 config.mk
+#585 28.30 drwxrwxr-x   2 root root    69632 Jan  7  2025 configs
+#585 28.30 drwxrwxr-x   2 root root     4096 Jan  7  2025 disk
+#585 28.30 drwxrwxr-x  19 root root     4096 Jan  7  2025 doc
+#585 28.30 drwxrwxr-x  76 root root     4096 Jan  7  2025 drivers
+#585 28.30 drwxrwxr-x   3 root root     4096 Jan  7  2025 dts
+#585 28.30 drwxrwxr-x   2 root root     4096 Jan  7  2025 env
+#585 28.30 drwxrwxr-x   4 root root     4096 Jan  7  2025 examples
+#585 28.30 drwxrwxr-x  14 root root     4096 Jan  7  2025 fs
+#585 28.30 drwxrwxr-x  38 root root    20480 Jan  7  2025 include
+#585 28.30 drwxrwxr-x  26 root root     4096 Jan  7  2025 lib
+#585 28.30 drwxrwxr-x   3 root root     4096 Jan  7  2025 net
+#585 28.30 drwxrwxr-x   5 root root     4096 Jan  7  2025 post
+#585 28.30 drwxrwxr-x   6 root root     4096 Jan  7  2025 scripts
+#585 28.30 drwxrwxr-x  17 root root     4096 Jan  7  2025 test
+#585 28.30 drwxrwxr-x  15 root root     4096 Jan  7  2025 tools
+#585 28.30 -rw-------   7 root root 32890299 Jan  7  2025 u-boot.tar.bz2
+#585 28.41 Applying /pkg/patches/uboot-byteorder.patch
+#585 28.47 patching file include/linux/byteorder/little_endian.h
+#585 28.51 Applying /pkg/patches/uboot-copy-opi5.patch
+#585 28.54 patching file orangepi-5-pro-rk3588s_defconfig
+#585 DONE 28.8s
+
+#593 linux/arm64 u-boot-rockpi4c:build-0
+#593 19.83   UPD     include/config.h
+#593 19.91   CFG     u-boot.cfg
+#593 19.93   GEN     include/autoconf.mk.dep
+#593 20.08   CFG     tpl/u-boot.cfg
+#593 20.13   CFG     spl/u-boot.cfg
+#593 21.61   GEN     spl/include/autoconf.mk
+#593 21.69   GEN     include/autoconf.mk
+#593 21.84   GEN     tpl/include/autoconf.mk
+#593 ...
+
+#601 linux/arm64 u-boot-orangepi-5-pro:prepare-0
+#601 ...
+
+#590 linux/arm64 u-boot-helios64:build-0
+#590 19.54   GEN     spl/include/autoconf.mk
+#590 ...
+
+#592 linux/arm64 u-boot-rockpi4:build-0
+#592 19.50   UPD     include/config.h
+#592 19.56   CFG     u-boot.cfg
+#592 19.56   GEN     include/autoconf.mk.dep
+#592 19.68   CFG     tpl/u-boot.cfg
+#592 19.78   CFG     spl/u-boot.cfg
+#592 20.88   GEN     spl/include/autoconf.mk
+#592 20.89   GEN     include/autoconf.mk
+#592 21.64   GEN     tpl/include/autoconf.mk
+#592 ...
+
+#595 linux/arm64 u-boot-rock4se:build-0
+#595 19.61   UPD     include/config.h
+#595 19.67   CFG     u-boot.cfg
+#595 19.71   GEN     include/autoconf.mk.dep
+#595 19.74   CFG     spl/u-boot.cfg
+#595 19.89   CFG     tpl/u-boot.cfg
+#595 21.16   GEN     include/autoconf.mk
+#595 21.67   GEN     tpl/include/autoconf.mk
+#595 21.96   GEN     spl/include/autoconf.mk
+#595 ...
+
+#598 linux/arm64 u-boot-rock5b:build-0
+#598 19.82   UPD     include/config.h
+#598 19.89   CFG     u-boot.cfg
+#598 19.90   GEN     include/autoconf.mk.dep
+#598 20.09   CFG     spl/u-boot.cfg
+#598 20.86   GEN     spl/include/autoconf.mk
+#598 21.08   GEN     include/autoconf.mk
+#598 ...
+
+#584 linux/arm64 u-boot-turingrk1:build-0
+#584 19.63   UPD     include/config.h
+#584 19.69   CFG     u-boot.cfg
+#584 19.77   GEN     include/autoconf.mk.dep
+#584 19.84   CFG     spl/u-boot.cfg
+#584 20.45   GEN     include/autoconf.mk
+#584 20.52   GEN     spl/include/autoconf.mk
+#584 ...
+
+#597 linux/arm64 u-boot-rock5a:build-0
+#597 19.64   UPD     include/config.h
+#597 19.72   CFG     u-boot.cfg
+#597 19.73   GEN     include/autoconf.mk.dep
+#597 19.82   CFG     spl/u-boot.cfg
+#597 20.79   GEN     spl/include/autoconf.mk
+#597 21.17   GEN     include/autoconf.mk
+#597 ...
+
+#594 linux/arm64 u-boot-orangepi-r1-plus-lts:build-0
+#594 19.78   UPD     include/config.h
+#594 19.86   GEN     include/autoconf.mk.dep
+#594 19.87   CFG     u-boot.cfg
+#594 19.90   CFG     spl/u-boot.cfg
+#594 20.00   CFG     tpl/u-boot.cfg
+#594 21.36   GEN     tpl/include/autoconf.mk
+#594 21.81   GEN     include/autoconf.mk
+#594 21.86   GEN     spl/include/autoconf.mk
+#594 ...
+
+#596 linux/arm64 u-boot-orangepi-5:build-0
+#596 20.44   UPD     include/config.h
+#596 20.51   GEN     include/autoconf.mk.dep
+#596 20.52   CFG     u-boot.cfg
+#596 20.63   CFG     spl/u-boot.cfg
+#596 21.52   GEN     include/autoconf.mk
+#596 21.78   GEN     spl/include/autoconf.mk
+#596 ...
+
+#589 linux/arm64 u-boot-orangepi-5-plus:build-0
+#589 20.93   GEN     spl/include/autoconf.mk
+#589 ...
+
+#600 linux/arm64 u-boot-rockpro64:build-0
+#600 21.54   GEN     include/autoconf.mk
+#600 21.65   GEN     spl/include/autoconf.mk
+#600 ...
+
+#601 linux/arm64 u-boot-orangepi-5-pro:prepare-0
+#601 2.722   HOSTCC  scripts/basic/fixdep
+#601 7.919   HOSTCC  scripts/kconfig/conf.o
+#601 14.78   YACC    scripts/kconfig/zconf.tab.c
+#601 16.65   LEX     scripts/kconfig/zconf.lex.c
+#601 16.89   HOSTCC  scripts/kconfig/zconf.tab.o
+#601 ...
+
+#597 linux/arm64 u-boot-rock5a:build-0
+#597 82.53   UPD     include/generated/dt.h
+#597 82.63   UPD     include/generated/timestamp_autogenerated.h
+#597 82.72   ENVC    include/generated/env.txt
+#597 83.05   UPD     include/config/uboot.release
+#597 84.26   ENVP    include/generated/env.in
+#597 84.28   UPD     include/generated/version_autogenerated.h
+#597 84.61   ENVT    include/generated/environment.h
+#597 84.70   HOSTCC  scripts/dtc/dtc.o
+#597 84.72   HOSTCC  scripts/dtc/flattree.o
+#597 84.77   HOSTCC  scripts/dtc/fstree.o
+#597 84.86   HOSTCC  scripts/dtc/treesource.o
+#597 84.87   HOSTCC  scripts/dtc/data.o
+#597 84.88   HOSTCC  scripts/dtc/livetree.o
+#597 84.90   HOSTCC  scripts/dtc/srcpos.o
+#597 84.94   HOSTCC  scripts/dtc/checks.o
+#597 84.96   HOSTCC  scripts/dtc/util.o
+#597 84.99   SHIPPED scripts/dtc/pylibfdt/libfdt.i
+#597 85.14   LEX     scripts/dtc/dtc-lexer.lex.c
+#597 85.18   YACC    scripts/dtc/dtc-parser.tab.h
+#597 85.32   YACC    scripts/dtc/dtc-parser.tab.c
+#597 85.33   PYMOD   rebuild
+#597 85.79   CC      arch/arm/lib/asm-offsets.s
+#597 85.81   CC      lib/asm-offsets.s
+#597 ...
+
+#587 linux/arm64 u-boot-odroid-m1:build-0
+#587 84.88   UPD     include/generated/dt.h
+#587 84.91   ENVC    include/generated/env.txt
+#587 85.02   UPD     include/generated/timestamp_autogenerated.h
+#587 85.53   UPD     include/config/uboot.release
+#587 86.92   ENVP    include/generated/env.in
+#587 87.38   UPD     include/generated/version_autogenerated.h
+#587 87.49   ENVT    include/generated/environment.h
+#587 87.70   HOSTCC  scripts/dtc/dtc.o
+#587 87.77   HOSTCC  scripts/dtc/flattree.o
+#587 87.83   HOSTCC  scripts/dtc/fstree.o
+#587 87.91   HOSTCC  scripts/dtc/data.o
+#587 87.91   HOSTCC  scripts/dtc/livetree.o
+#587 88.02   HOSTCC  scripts/dtc/treesource.o
+#587 88.11   HOSTCC  scripts/dtc/srcpos.o
+#587 88.11   SHIPPED scripts/dtc/pylibfdt/libfdt.i
+#587 88.14   HOSTCC  scripts/dtc/checks.o
+#587 88.24   LEX     scripts/dtc/dtc-lexer.lex.c
+#587 88.28   YACC    scripts/dtc/dtc-parser.tab.h
+#587 88.34   HOSTCC  scripts/dtc/util.o
+#587 88.45   YACC    scripts/dtc/dtc-parser.tab.c
+#587 89.12   PYMOD   rebuild
+#587 ...
+
+#598 linux/arm64 u-boot-rock5b:build-0
+#598 86.03   UPD     include/generated/dt.h
+#598 86.07   ENVC    include/generated/env.txt
+#598 86.11   UPD     include/generated/timestamp_autogenerated.h
+#598 86.64   UPD     include/config/uboot.release
+#598 88.31   ENVP    include/generated/env.in
+#598 88.62   UPD     include/generated/version_autogenerated.h
+#598 88.88   ENVT    include/generated/environment.h
+#598 89.12   HOSTCC  scripts/dtc/dtc.o
+#598 89.14   HOSTCC  scripts/dtc/flattree.o
+#598 89.25   HOSTCC  scripts/dtc/livetree.o
+#598 89.27   HOSTCC  scripts/dtc/fstree.o
+#598 89.32   HOSTCC  scripts/dtc/data.o
+#598 89.32   HOSTCC  scripts/dtc/treesource.o
+#598 89.45   HOSTCC  scripts/dtc/srcpos.o
+#598 89.47   HOSTCC  scripts/dtc/checks.o
+#598 89.55   YACC    scripts/dtc/dtc-parser.tab.h
+#598 89.57   HOSTCC  scripts/dtc/util.o
+#598 89.67   SHIPPED scripts/dtc/pylibfdt/libfdt.i
+#598 89.68   LEX     scripts/dtc/dtc-lexer.lex.c
+#598 89.80   YACC    scripts/dtc/dtc-parser.tab.c
+#598 90.93   PYMOD   rebuild
+#598 ...
+
+#584 linux/arm64 u-boot-turingrk1:build-0
+#584 87.03   ENVC    include/generated/env.txt
+#584 87.10   UPD     include/generated/dt.h
+#584 87.28   UPD     include/generated/timestamp_autogenerated.h
+#584 87.53   UPD     include/config/uboot.release
+#584 89.45   ENVP    include/generated/env.in
+#584 89.81   UPD     include/generated/version_autogenerated.h
+#584 90.03   ENVT    include/generated/environment.h
+#584 90.30   HOSTCC  scripts/dtc/dtc.o
+#584 90.34   HOSTCC  scripts/dtc/flattree.o
+#584 90.40   HOSTCC  scripts/dtc/fstree.o
+#584 90.48   HOSTCC  scripts/dtc/data.o
+#584 90.52   HOSTCC  scripts/dtc/livetree.o
+#584 90.77   HOSTCC  scripts/dtc/treesource.o
+#584 90.78   HOSTCC  scripts/dtc/checks.o
+#584 90.80   HOSTCC  scripts/dtc/srcpos.o
+#584 90.80   HOSTCC  scripts/dtc/util.o
+#584 90.96   LEX     scripts/dtc/dtc-lexer.lex.c
+#584 91.03   SHIPPED scripts/dtc/pylibfdt/libfdt.i
+#584 91.05   YACC    scripts/dtc/dtc-parser.tab.c
+#584 91.16   YACC    scripts/dtc/dtc-parser.tab.h
+#584 92.46   PYMOD   rebuild
+#584 ...
+
+#587 linux/arm64 u-boot-odroid-m1:build-0
+#587 92.78   CC      lib/asm-offsets.s
+#587 92.80   CC      arch/arm/lib/asm-offsets.s
+#587 ...
+
+#588 linux/arm64 u-boot-nanopi-r5s:build-0
+#588 83.85   UPD     include/generated/dt.h
+#588 83.91   ENVC    include/generated/env.txt
+#588 83.95   UPD     include/generated/timestamp_autogenerated.h
+#588 84.45   UPD     include/config/uboot.release
+#588 85.42   ENVP    include/generated/env.in
+#588 85.67   UPD     include/generated/version_autogenerated.h
+#588 86.05   ENVT    include/generated/environment.h
+#588 86.14   HOSTCC  scripts/dtc/dtc.o
+#588 86.16   HOSTCC  scripts/dtc/flattree.o
+#588 86.21   HOSTCC  scripts/dtc/fstree.o
+#588 86.23   HOSTCC  scripts/dtc/data.o
+#588 86.28   HOSTCC  scripts/dtc/livetree.o
+#588 86.29   HOSTCC  scripts/dtc/treesource.o
+#588 86.37   HOSTCC  scripts/dtc/checks.o
+#588 86.45   HOSTCC  scripts/dtc/srcpos.o
+#588 86.45   LEX     scripts/dtc/dtc-lexer.lex.c
+#588 86.47   HOSTCC  scripts/dtc/util.o
+#588 86.49   YACC    scripts/dtc/dtc-parser.tab.h
+#588 86.50   SHIPPED scripts/dtc/pylibfdt/libfdt.i
+#588 86.62   YACC    scripts/dtc/dtc-parser.tab.c
+#588 88.04   PYMOD   rebuild
+#588 90.07   CC      lib/asm-offsets.s
+#588 90.24   CC      arch/arm/lib/asm-offsets.s
+#588 ...
+
+#596 linux/arm64 u-boot-orangepi-5:build-0
+#596 83.88   ENVC    include/generated/env.txt
+#596 83.92   UPD     include/generated/dt.h
+#596 84.10   UPD     include/generated/timestamp_autogenerated.h
+#596 84.23   UPD     include/config/uboot.release
+#596 85.53   ENVP    include/generated/env.in
+#596 85.83   UPD     include/generated/version_autogenerated.h
+#596 86.16   ENVT    include/generated/environment.h
+#596 86.34   HOSTCC  scripts/dtc/dtc.o
+#596 86.38   HOSTCC  scripts/dtc/flattree.o
+#596 86.39   HOSTCC  scripts/dtc/fstree.o
+#596 86.45   HOSTCC  scripts/dtc/data.o
+#596 86.50   HOSTCC  scripts/dtc/livetree.o
+#596 86.52   SHIPPED scripts/dtc/pylibfdt/libfdt.i
+#596 86.56   HOSTCC  scripts/dtc/treesource.o
+#596 86.61   HOSTCC  scripts/dtc/srcpos.o
+#596 86.66   HOSTCC  scripts/dtc/checks.o
+#596 86.73   YACC    scripts/dtc/dtc-parser.tab.h
+#596 86.75   YACC    scripts/dtc/dtc-parser.tab.c
+#596 86.77   LEX     scripts/dtc/dtc-lexer.lex.c
+#596 86.78   HOSTCC  scripts/dtc/util.o
+#596 87.39   PYMOD   rebuild
+#596 92.23   CC      lib/asm-offsets.s
+#596 92.47   CC      arch/arm/lib/asm-offsets.s
+#596 ...
+
+#590 linux/arm64 u-boot-helios64:build-0
+#590 93.61   ENVC    include/generated/env.txt
+#590 93.69   UPD     include/generated/dt.h
+#590 94.10   UPD     include/generated/timestamp_autogenerated.h
+#590 ...
+
+#486 linux/arm64 u-boot-radxa-zero-3:build-0
+#486 84.43   UPD     include/generated/dt.h
+#486 84.47   ENVC    include/generated/env.txt
+#486 84.52   UPD     include/generated/timestamp_autogenerated.h
+#486 84.76   UPD     include/config/uboot.release
+#486 86.08   ENVP    include/generated/env.in
+#486 86.28   UPD     include/generated/version_autogenerated.h
+#486 86.62   ENVT    include/generated/environment.h
+#486 86.66   HOSTCC  scripts/dtc/dtc.o
+#486 86.68   HOSTCC  scripts/dtc/flattree.o
+#486 86.72   HOSTCC  scripts/dtc/fstree.o
+#486 86.83   HOSTCC  scripts/dtc/data.o
+#486 86.86   HOSTCC  scripts/dtc/livetree.o
+#486 86.91   HOSTCC  scripts/dtc/treesource.o
+#486 86.95   HOSTCC  scripts/dtc/srcpos.o
+#486 87.09   SHIPPED scripts/dtc/pylibfdt/libfdt.i
+#486 87.18   HOSTCC  scripts/dtc/checks.o
+#486 87.22   LEX     scripts/dtc/dtc-lexer.lex.c
+#486 87.27   HOSTCC  scripts/dtc/util.o
+#486 87.50   YACC    scripts/dtc/dtc-parser.tab.h
+#486 87.60   YACC    scripts/dtc/dtc-parser.tab.c
+#486 87.86   PYMOD   rebuild
+#486 ...
+
+#589 linux/arm64 u-boot-orangepi-5-plus:build-0
+#589 84.40   ENVC    include/generated/env.txt
+#589 84.42   UPD     include/generated/dt.h
+#589 84.56   UPD     include/generated/timestamp_autogenerated.h
+#589 84.69   UPD     include/config/uboot.release
+#589 85.98   ENVP    include/generated/env.in
+#589 86.20   UPD     include/generated/version_autogenerated.h
+#589 86.50   ENVT    include/generated/environment.h
+#589 86.74   HOSTCC  scripts/dtc/dtc.o
+#589 86.78   HOSTCC  scripts/dtc/flattree.o
+#589 86.83   HOSTCC  scripts/dtc/data.o
+#589 86.84   HOSTCC  scripts/dtc/fstree.o
+#589 86.85   HOSTCC  scripts/dtc/livetree.o
+#589 86.96   HOSTCC  scripts/dtc/checks.o
+#589 86.97   HOSTCC  scripts/dtc/treesource.o
+#589 86.97   HOSTCC  scripts/dtc/srcpos.o
+#589 86.97   SHIPPED scripts/dtc/pylibfdt/libfdt.i
+#589 86.99   HOSTCC  scripts/dtc/util.o
+#589 87.02   LEX     scripts/dtc/dtc-lexer.lex.c
+#589 87.15   YACC    scripts/dtc/dtc-parser.tab.h
+#589 87.21   YACC    scripts/dtc/dtc-parser.tab.c
+#589 88.00   PYMOD   rebuild
+#589 92.93   CC      arch/arm/lib/asm-offsets.s
+#589 93.06   CC      lib/asm-offsets.s
+#589 ...
+
+#486 linux/arm64 u-boot-radxa-zero-3:build-0
+#486 94.68   CC      lib/asm-offsets.s
+#486 94.95   CC      arch/arm/lib/asm-offsets.s
+#486 95.36   HOSTCC  scripts/dtc/dtc-parser.tab.o
+#486 ...
+
+#601 linux/arm64 u-boot-orangepi-5-pro:prepare-0
+#601 71.12   HOSTLD  scripts/kconfig/conf
+#601 71.92 cc1: fatal error: ./arch/../configs/orangepi-5-pro-rk3588s_defconfig: No such file or directory
+#601 71.92 compilation terminated.
+#601 71.94 make[1]: *** [scripts/kconfig/Makefile:96: orangepi-5-pro-rk3588s_defconfig] Error 1
+#601 71.95 make: *** [Makefile:586: orangepi-5-pro-rk3588s_defconfig] Error 2
+#601 ERROR: process "/dev/.buildkit_qemu_emulator /bin/bash -c set -eou pipefail\nmake orangepi-5-pro-rk3588s_defconfig\n" did not complete successfully: exit code: 2
+
+#590 linux/arm64 u-boot-helios64:build-0
+#590 94.63   UPD     include/config/uboot.release
+#590 95.96   ENVP    include/generated/env.in
+#590 96.29   UPD     include/generated/version_autogenerated.h
+#590 96.55   ENVT    include/generated/environment.h
+#590 96.68   HOSTCC  scripts/dtc/dtc.o
+#590 96.70   HOSTCC  scripts/dtc/flattree.o
+#590 96.77   HOSTCC  scripts/dtc/fstree.o
+#590 96.83   HOSTCC  scripts/dtc/data.o
+#590 96.84   HOSTCC  scripts/dtc/livetree.o
+#590 96.85   HOSTCC  scripts/dtc/treesource.o
+#590 97.22   HOSTCC  scripts/dtc/srcpos.o
+#590 97.45   HOSTCC  scripts/dtc/checks.o
+#590 97.49   HOSTCC  scripts/dtc/util.o
+#590 97.70   LEX     scripts/dtc/dtc-lexer.lex.c
+#590 97.73   YACC    scripts/dtc/dtc-parser.tab.h
+#590 97.89   YACC    scripts/dtc/dtc-parser.tab.c
+#590 ...
+
+#595 linux/arm64 u-boot-rock4se:build-0
+#595 CANCELED
+
+#589 linux/arm64 u-boot-orangepi-5-plus:build-0
+#589 100.4   UPD     include/generated/asm-offsets.h
+#589 ...
+
+#593 linux/arm64 u-boot-rockpi4c:build-0
+#593 CANCELED
+
+#592 linux/arm64 u-boot-rockpi4:build-0
+#592 CANCELED
+
+#586 linux/arm64 u-boot-rock4cplus:build-0
+#586 CANCELED
+
+#591 linux/arm64 u-boot-nanopi-r4s:build-0
+#591 CANCELED
+
+#590 linux/arm64 u-boot-helios64:build-0
+#590 CANCELED
+
+#600 linux/arm64 u-boot-rockpro64:build-0
+#600 CANCELED
+
+#599 linux/arm64 u-boot-rock64:build-0
+#599 96.80   ENVC    include/generated/env.txt
+#599 96.87   UPD     include/generated/dt.h
+#599 96.90   UPD     include/generated/timestamp_autogenerated.h
+#599 98.08   UPD     include/config/uboot.release
+#599 100.3   ENVP    include/generated/env.in
+#599 100.7   UPD     include/generated/version_autogenerated.h
+#599 100.8   ENVT    include/generated/environment.h
+#599 CANCELED
+
+#594 linux/arm64 u-boot-orangepi-r1-plus-lts:build-0
+#594 97.23   UPD     include/generated/dt.h
+#594 97.42   ENVC    include/generated/env.txt
+#594 97.52   UPD     include/generated/timestamp_autogenerated.h
+#594 98.57   UPD     include/config/uboot.release
+#594 100.4   ENVP    include/generated/env.in
+#594 100.8   UPD     include/generated/version_autogenerated.h
+#594 101.0   ENVT    include/generated/environment.h
+#594 CANCELED
+
+#597 linux/arm64 u-boot-rock5a:build-0
+#597 94.75   HOSTCC  scripts/dtc/dtc-parser.tab.o
+#597 94.93   HOSTCC  scripts/dtc/dtc-lexer.lex.o
+#597 95.87   UPD     include/generated/asm-offsets.h
+#597 99.03   UPD     include/generated/generic-asm-offsets.h
+#597 CANCELED
+
+#596 linux/arm64 u-boot-orangepi-5:build-0
+#596 CANCELED
+
+#588 linux/arm64 u-boot-nanopi-r5s:build-0
+#588 98.47   HOSTCC  scripts/dtc/dtc-parser.tab.o
+#588 CANCELED
+
+#587 linux/arm64 u-boot-odroid-m1:build-0
+#587 CANCELED
+
+#486 linux/arm64 u-boot-radxa-zero-3:build-0
+#486 CANCELED
+
+#598 linux/arm64 u-boot-rock5b:build-0
+#598 97.18   CC      lib/asm-offsets.s
+#598 97.43   CC      arch/arm/lib/asm-offsets.s
+#598 CANCELED
+
+#589 linux/arm64 u-boot-orangepi-5-plus:build-0
+#589 CANCELED
+
+#584 linux/arm64 u-boot-turingrk1:build-0
+#584 96.25   CC      lib/asm-offsets.s
+#584 96.74   CC      arch/arm/lib/asm-offsets.s
+#584 CANCELED
+------
+ > linux/arm64 u-boot-orangepi-5-pro:prepare-0:
+2.722   HOSTCC  scripts/basic/fixdep
+7.919   HOSTCC  scripts/kconfig/conf.o
+14.78   YACC    scripts/kconfig/zconf.tab.c
+16.65   LEX     scripts/kconfig/zconf.lex.c
+16.89   HOSTCC  scripts/kconfig/zconf.tab.o
+71.12   HOSTLD  scripts/kconfig/conf
+71.92 cc1: fatal error: ./arch/../configs/orangepi-5-pro-rk3588s_defconfig: No such file or directory
+71.92 compilation terminated.
+71.94 make[1]: *** [scripts/kconfig/Makefile:96: orangepi-5-pro-rk3588s_defconfig] Error 1
+71.95 make: *** [Makefile:586: orangepi-5-pro-rk3588s_defconfig] Error 2
+------
+ERROR: failed to build: failed to solve: process "/dev/.buildkit_qemu_emulator /bin/bash -c set -eou pipefail\nmake orangepi-5-pro-rk3588s_defconfig\n" did not complete successfully: exit code: 2
+make[2]: *** [Makefile:120: target-sbc-rockchip] Error 1
+make[2]: Leaving directory '/home/wwaddell/sbc-rockchip'
+make[1]: *** [Makefile:126: docker-sbc-rockchip] Error 2
+make[1]: Leaving directory '/home/wwaddell/sbc-rockchip'
+make: *** [Makefile:138: sbc-rockchip] Error 2

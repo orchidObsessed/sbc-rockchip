@@ -18,11 +18,16 @@ steps:
         sha512: "{{ .uboot_rk1_sha512 }}"
     env:
       SOURCE_DATE_EPOCH: {{ .BUILD_ARG_SOURCE_DATE_EPOCH }}
+      DUMMY_NOCACHE: 5
     prepare:
       # orangepi-5-pro-rk3588s
       - |
+
+        # echo "=============== CAN YOU HEAR ME ?!?!?! ====================="
         tar xf u-boot.tar.bz2 --strip-components=1
 
+        # debug
+        # echo "Found patches $(ls -la)"
         for patch in $(find /pkg/patches -type f -name "*.patch" | sort); do
           echo "Applying $patch"
           patch -p1 < $patch || (echo "Failed to apply patch $patch" && exit 1)

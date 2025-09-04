@@ -1,13 +1,18 @@
+From b00411e9d4b6e3461629c1d6966f2814ea3d71d2 Mon Sep 17 00:00:00 2001
+From: root <root@ozy-pc-01.ozymandias.local>
+Date: Wed, 3 Sep 2025 22:36:48 -0500
+Subject: [PATCH] add opi5-pro
+
 ---
  orangepi-5-pro-rk3588s_defconfig | 85 ++++++++++++++++++++++++++++++++
  1 file changed, 85 insertions(+)
- create mode 100644 configs/orangepi-5-pro-rk3588s_defconfig
+ create mode 100644 orangepi-5-pro-rk3588s_defconfig
 
-diff --git a/configs/orangepi-5-pro-rk3588s_defconfig b/configs/orangepi-5-pro-rk3588s_defconfig
+diff --git a/orangepi-5-pro-rk3588s_defconfig b/orangepi-5-pro-rk3588s_defconfig
 new file mode 100644
 index 0000000..d7c59ae
 --- /dev/null
-+++ b/configs/orangepi-5-pro-rk3588s_defconfig
++++ b/orangepi-5-pro-rk3588s_defconfig
 @@ -0,0 +1,85 @@
 +CONFIG_ARM=y
 +CONFIG_SKIP_LOWLEVEL_INIT=y

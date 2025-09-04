@@ -1,6 +1,6 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED, PLEASE DO NOT EDIT.
 #
-# Generated on 2024-03-14T17:15:12Z by kres latest.
+# Generated on 2025-09-04T03:55:27Z by kres 784fa1f.
 
 policies:
   - type: commit
@@ -9,7 +9,7 @@ policies:
       gpg:
         required: true
         identity:
-          gitHubOrganization: siderolabs
+          gitHubOrganization: orchidObsessed
       spellcheck:
         locale: US
       maximumOfOneCommit: true
