@@ -18,7 +18,7 @@ steps:
         sha512: "{{ .uboot_rk1_sha512 }}"
     env:
       SOURCE_DATE_EPOCH: {{ .BUILD_ARG_SOURCE_DATE_EPOCH }}
-      DUMMY_NOCACHE: 5
+      DUMMY_NOCACHE: 8
     prepare:
       # orangepi-5-pro-rk3588s
       - |
