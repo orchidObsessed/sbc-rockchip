@@ -31,8 +31,8 @@ dependencies:
     platform: linux/arm64
   - stage: u-boot-orangepi-5
     platform: linux/arm64
-  - stage: u-boot-orangepi-5-pro
-    platform: linux/arm64
+  # - stage: u-boot-orangepi-5-pro
+  #   platform: linux/arm64
   - stage: u-boot-orangepi-5-plus
     platform: linux/arm64
   - stage: u-boot-orangepi-r1-plus-lts
@@ -77,10 +77,10 @@ dependencies:
     platform: linux/arm64
     from: /dtb/rockchip/rk3588s-orangepi-5.dtb
     to: /rootfs/artifacts/arm64/dtb/rockchip/rk3588s-orangepi-5.dtb
-  - image: "{{ .BUILD_ARG_PKGS_PREFIX }}/kernel:{{ .BUILD_ARG_PKGS }}"
-    platform: linux/arm64
-    from: /dtb/rockchip/rk3588s-orangepi-5-pro.dtb
-    to: /rootfs/artifacts/arm64/dtb/rockchip/rk3588s-orangepi-5-pro.dtb
+  # - image: "{{ .BUILD_ARG_PKGS_PREFIX }}/kernel:{{ .BUILD_ARG_PKGS }}"
+  #   platform: linux/arm64
+  #   from: /dtb/rockchip/rk3588s-orangepi-5-pro.dtb
+  #   to: /rootfs/artifacts/arm64/dtb/rockchip/rk3588s-orangepi-5-pro.dtb
   - image: "{{ .BUILD_ARG_PKGS_PREFIX }}/kernel:{{ .BUILD_ARG_PKGS }}"
     platform: linux/arm64
     from: /dtb/rockchip/rk3588-orangepi-5-plus.dtb

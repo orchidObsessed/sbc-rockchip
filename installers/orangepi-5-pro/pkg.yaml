@@ -26,8 +26,10 @@ steps:
     install:
       - |
         mkdir -p /rootfs/installers/
-
         cp -p /pkg/src/orangepi-5-pro /rootfs/installers/orangepi-5-pro
+
+        mkdir -p /rootfs/boot/dtb/rockchip/
+        cp -p artifacts/orangepi-5-pro/dtb/rk3588s-orangepi-5-pro.dtb /rootfs/boot/dtb/rockchip/rk3588s-orangepi-5-pro.dtb
 finalize:
   - from: /rootfs
     to: /rootfs
